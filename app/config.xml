@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<websiteconfig>
+
+    <sitename>Nom du site</sitename>
+
+    <address>7 rue de la Rue</address>
+    <cp>73000</cp>
+    <city>Chambery</city>
+
+    <mail>mail@mail.fr</mail>
+
+    <siret>00000000000000000</siret>
+
+    <weblinkhref>http://www.site.com</weblinkhref>
+    <weblink>www.site.com</weblink>
+
+</websiteconfig>
