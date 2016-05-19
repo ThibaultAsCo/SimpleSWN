@@ -1,4 +1,19 @@
 <?php
+/**
+ *
+ *  ex : <?= $configSite->sitename; ?>
+ *
+ * sitename
+ * address
+ * cp
+ * city
+ * mail
+ * siret
+ * weblinkhref
+ * weblink
+ **/
+
+$configSite = simplexml_load_file('app/config.xml');
 
 ob_start();
 
@@ -8,10 +23,10 @@ if(isset($_GET['p'])){
         require_once'page/'.$_GET['p'].'.php';
     }
     else
-        require_once'page/accueil.php';
+        require_once'page/'.$configSite->defaultpage.'.php';
 }
 else
-    require_once'page/accueil.php';
+    require_once'page/'.$configSite->defaultpage.'.php';
 
 
 $data = ob_get_clean();

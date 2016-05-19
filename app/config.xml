@@ -15,4 +15,6 @@
     <weblinkhref>http://www.site.com</weblinkhref>
     <weblink>www.site.com</weblink>
 
+    <defaultpage>accueil</defaultpage>
+
 </websiteconfig>
