@@ -15,7 +15,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <meta name="keywords" content="">
-        <title>$titlePage - <?= $configSite->sitename; ?></title>
+        <title><?= $titlePage ?> - <?= $configSite->sitename; ?></title>
     
         <link rel="icon" href="">
     

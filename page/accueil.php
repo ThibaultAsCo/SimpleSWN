@@ -1,1 +1,5 @@
-test page accueil
+<?php
+    $title = 'Accueil';
+    $description = '';
+    $keywords = '';
+?>
