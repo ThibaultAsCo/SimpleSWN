@@ -12,10 +12,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <meta name="keywords" content="">
-        <title><?= $titlePage ?> - <?= $configSite->sitename; ?></title>
+        <meta name="description" content="<?= $description ?>">
+        <meta name="author" content="<?= $configSite->authorsite; ?>">
+        <meta name="keywords" content="<?= $keywords ?>">
+        <title><?= $title ?> - <?= $configSite->sitename; ?></title>
     
         <link rel="icon" href="">
     
@@ -29,9 +29,6 @@
     <body>
     
         <?= $data; ?>
-    
+
     </body>
-
-
-
 <i class="fa fa-cogs" aria-hidden="true"></i>
