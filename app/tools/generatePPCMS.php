@@ -4,21 +4,21 @@
 //             (array)              //
 //////////////////////////////////////
 
-$keyWords = array('');
+$keyWords = array('A', 'B', 'C', 'D');
 
 //////////////////////////////////////
 //           Localisation           //
 //             (array)              //
 //////////////////////////////////////
 
-$local = array('');
+$local = array('1', '2', '3', '4', '5');
 
 //////////////////////////////////////
 //           Info Societe           //
 //////////////////////////////////////
 
-$societe = '';
-$societeLoc = '';
+$societe = 'Name';
+$societeLoc = 'Ville';
 
 echo'<ul>';
 
@@ -38,11 +38,11 @@ for ($i=0; $i<count($keyWords); $i++) {
         $textOut = array(
             '(<strong>'.$LOL.'</strong>)'
         ,
-            ''
+            '(<strong>'.$LOL.'</strong>)'
         ,
-            ''
+            '(<strong>'.$LOL.'</strong>)'
         ,
-            '');
+            '(<strong>'.$LOL.'</strong>)');
 
 
 
@@ -70,19 +70,29 @@ for ($i=0; $i<count($keyWords); $i++) {
 //////////////////////////////////////
 
 
-        $open = fopen('page/'.$keyWords[$i].'-'.$local[$ii].".php", "w");
+       /* $open = fopen('../../poker/'.$keyWords[$i].'-'.$local[$ii].".php", "w");
         fwrite($open, $template);
-        fclose($open);
+        fclose($open);*/
 
         echo '<li>Fichier <strong>'.$keyWords[$i].'-'.$local[$ii].'</strong>.php cr&eacute;&eacute;</li>';
     }
 }
 echo'</ul><br>';
 
+//////////////////////////////////////
+//         Génération XML           //
+//////////////////////////////////////
+
+
+$xml = simplexml_load_file('pokerSRC.xml');
+
 for ($l=0; $l<count($keyWords); $l++) {
     for ($ll=0; $ll<count($local); $ll++){
 
+        $xml->addChild('link', $keyWords[$l].'-'.$local[$ll].'.html');
         $footerSuperCool ='<a href="'.$keyWords[$l].'-'.$local[$ll].'.html">'.ucfirst(str_replace('-', ' ', $keyWords[$l])).' '.ucfirst(str_replace('-', ' ', $local[$ll])).'</a> ';
         echo '<pre><xmp>'.$footerSuperCool.'</xmp></pre>';
 
     }}
+
+$xml->saveXML('../poker.xml');

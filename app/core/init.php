@@ -1,10 +1,10 @@
 <?php
 
-/**
+/*
  *
  * Config connexion BDD (switch auto local / remote)
  *
- **/
+ */
 
     if( strpos(gethostname(), '.local') !== false ) {
 

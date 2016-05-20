@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <poker>
-    <link>A.php</link>
-    <link>B.php</link>
-    <link>C.php</link>
-    <link>D.php</link>
-    <link>E.php</link>
-    <link>F.php</link>
-</poker>
+<link>A-1.html</link><link>A-2.html</link><link>A-3.html</link><link>A-4.html</link><link>A-5.html</link><link>B-1.html</link><link>B-2.html</link><link>B-3.html</link><link>B-4.html</link><link>B-5.html</link><link>C-1.html</link><link>C-2.html</link><link>C-3.html</link><link>C-4.html</link><link>C-5.html</link><link>D-1.html</link><link>D-2.html</link><link>D-3.html</link><link>D-4.html</link><link>D-5.html</link></poker>

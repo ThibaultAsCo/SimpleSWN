@@ -5,6 +5,16 @@ class PokerPage {
     public $plop;
     public $outMomo;
 
+    /*
+     * @return string
+     *
+     * ex :
+     *      <?php $pp = new PokerPage(); ?>
+     *      <?= $pp->pokerFoo(); ?>
+     *
+     */
+
+
     public function pokerFoo(){
 
         $this->momo = simplexml_load_file('app/poker.xml');
@@ -17,9 +27,5 @@ class PokerPage {
         $this->outMomo .= '</div></section>';
 
         return $this->outMomo;
-    }
-
-    public function plop(){
-        echo'lol';
     }
 }

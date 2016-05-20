@@ -32,14 +32,8 @@
     
         <?= $data; ?>
 
-        <?php $nia =  new PokerPage();
-            echo($nia->pokerFoo());
-        ?>
-
-        
-                
-            </div>
-        </section>
+        <?php $pp = new PokerPage(); ?>
+        <?= $pp->pokerFoo(); ?>
     
     </body>
 </html>

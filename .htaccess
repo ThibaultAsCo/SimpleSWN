@@ -1,0 +1,19 @@
+RewriteEngine on
+#RewriteBase /
+#########################################################################
+RewriteRule ^admin/(.*) admin/$1 [L]
+RewriteRule ^app/(.*) app/$1 [L]
+RewriteRule ^asset/(.*) asset/$1 [L]
+RewriteRule ^imgUpload/(.*) imgUpload/$1 [L]
+RewriteRule ^page/(.*) page/$1 [L]
+RewriteRule ^poker/(.*) poker/$1 [L]
+#########################################################################
+
+RewriteRule ^([A-Za-z0-9-_]+)/?.html?([A-Za-z0-9-_]+)$ index.php?p=$1 [L]
+
+ErrorDocument 401 http://www.site.com
+ErrorDocument 403 http://www.site.com
+ErrorDocument 404 http://www.site.com
+ErrorDocument 500 http://www.site.com
+
+
