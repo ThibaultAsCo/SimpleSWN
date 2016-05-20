@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<poker>
+    <link>A.php</link>
+    <link>B.php</link>
+    <link>C.php</link>
+    <link>D.php</link>
+    <link>E.php</link>
+    <link>F.php</link>
+</poker>

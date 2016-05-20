@@ -2,6 +2,7 @@
     require'app/core/core.php';
     require'app/core/init.php';
     require'app/core/TemplateTools.php';
+    require'app/core/PokerPage.php';
 ?>
 
 
@@ -18,6 +19,7 @@
         <title><?= $title ?> - <?= $configSite->sitename; ?></title>
     
         <link rel="icon" href="">
+        <link rel="stylesheet" href="asset/css/pp.css" />
     
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -30,5 +32,14 @@
     
         <?= $data; ?>
 
+        <?php $nia =  new PokerPage();
+            echo($nia->pokerFoo());
+        ?>
+
+        
+                
+            </div>
+        </section>
+    
     </body>
-<i class="fa fa-cogs" aria-hidden="true"></i>
+</html>

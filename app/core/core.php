@@ -11,6 +11,7 @@
  * siret
  * weblinkhref
  * weblink
+ * 
  **/
 
 $configSite = simplexml_load_file('app/config.xml');
