@@ -22,7 +22,7 @@ class PokerPage {
         $this->outMomo = '<section class="outerMask"><div class="row innerMask">';
         foreach($this->momo->link as $this->plop){
 
-            $this->outMomo .= '<a href="'.$this->plop.'">'.trim($this->plop, '.php').'</a> ';
+            $this->outMomo .= '<a href="'.$this->plop.'">'.trim($this->plop, '.html').'</a> ';
         }
         $this->outMomo .= '</div></section>';
 
