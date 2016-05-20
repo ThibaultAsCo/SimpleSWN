@@ -6829,7 +6829,7 @@
           var data = new FormData();
           data.append('file', files[0]);
           $.ajax({
-            url: 'editor-upload.php',
+            url: 'lib/summernote/editor-upload.php',
             method: 'POST',
             data: data,
             processData: false,
