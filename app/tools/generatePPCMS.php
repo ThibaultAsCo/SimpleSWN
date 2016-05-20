@@ -70,9 +70,9 @@ for ($i=0; $i<count($keyWords); $i++) {
 //////////////////////////////////////
 
 
-       /* $open = fopen('../../poker/'.$keyWords[$i].'-'.$local[$ii].".php", "w");
+        $open = fopen('../../pp/'.$keyWords[$i].'-'.$local[$ii].".php", "w");
         fwrite($open, $template);
-        fclose($open);*/
+        fclose($open);
 
         echo '<li>Fichier <strong>'.$keyWords[$i].'-'.$local[$ii].'</strong>.php cr&eacute;&eacute;</li>';
     }
