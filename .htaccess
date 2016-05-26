@@ -9,7 +9,8 @@ RewriteRule ^page/(.*) page/$1 [L]
 RewriteRule ^poker/(.*) poker/$1 [L]
 #########################################################################
 
-RewriteRule ^([A-Za-z0-9-_]+)/?.html?([A-Za-z0-9-_]+)$ index.php?p=$1 [L]
+RewriteRule ^([A-Za-z0-9-_]+)/?.html$ index.php?p=$1 [L]
+RewriteRule ^([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?.html$ index.php?p=$1&$2 [L]
 
 #ErrorDocument 401 http://www.site.com
 #ErrorDocument 403 http://www.site.com
