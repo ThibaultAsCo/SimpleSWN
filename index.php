@@ -3,6 +3,7 @@
     require'app/core/init.php';
     require'app/core/TemplateTools.php';
     require'app/core/PokerPage.php';
+    require'app/core/urlChecker.php';
 ?>
 
 
