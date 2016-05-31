@@ -1,10 +1,4 @@
-<?php
-    require'app/core/core.php';
-    require'app/core/init.php';
-    require'app/core/TemplateTools.php';
-    require'app/core/PokerPage.php';
-    require'app/core/urlChecker.php';
-?>
+<?php require'app/core/core.php';?>
 
 
 <!DOCTYPE html>
