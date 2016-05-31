@@ -20,6 +20,16 @@ $local = array('1', '2', '3', '4', '5');
 $societe = 'Name';
 $societeLoc = 'Ville';
 
+//////////////////////////////////////
+//            Description           //
+//                                  //
+//////////////////////////////////////
+
+
+$descMini = '';
+
+//////////////////////////////////////
+
 echo'<ul>';
 
 for ($i=0; $i<count($keyWords); $i++) {
@@ -54,7 +64,7 @@ for ($i=0; $i<count($keyWords); $i++) {
             <?php
                 $title = \''.$societe.' - '.ucfirst($LOL).'\';
                 $keywords = \''.str_replace('-', ' ', $keyWords[$i]).', '.str_replace('-', ' ', $local[$ii]).'\';
-                $description = \''.$societe.' - '.ucfirst($LOL).'\';
+                $description = \''.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.$local[$ii].'\';
             ?>';
         
         $template .='';
@@ -73,6 +83,8 @@ for ($i=0; $i<count($keyWords); $i++) {
         $open = fopen('../../pp/'.$keyWords[$i].'-'.$local[$ii].".php", "w");
         fwrite($open, $template);
         fclose($open);
+
+        $template .= '';
 
         echo '<li>Fichier <strong>'.$keyWords[$i].'-'.$local[$ii].'</strong>.php cr&eacute;&eacute;</li>';
     }
