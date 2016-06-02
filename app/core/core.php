@@ -16,9 +16,22 @@
 
 $configSite = simplexml_load_file('app/config.xml');
 
+/*$langageSelector = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+
+if(!isset($_SESSION['lang'])) {
+    $_SESSION['lang'] = $langageSelector;
+    $_SESSION['langUser'] = $langageSelector;
+}
+
+if($_SESSION['lang'] != $_SESSION['langUser'])
+    $_SESSION['lang'] = $_SESSION['langUser'];
+
+
+$lang = simplexml_load_file('app/lang/'.$_SESSION['lang'].'/data.xml');*/
+
 ob_start();
 
-require'app/core/init.php';
+//require'app/core/init.php';
 require'app/core/urlChecker.php';
 require'app/core/TemplateTools.php';
 require'app/core/PokerPage.php'; 
