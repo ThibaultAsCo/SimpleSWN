@@ -4,14 +4,14 @@
 //             (array)              //
 //////////////////////////////////////
 
-$keyWords = array('A', 'B', 'C', 'D');
+$keyWords = array('L\'ÉTÉ', 'B', 'C', 'D');
 
 //////////////////////////////////////
 //           Localisation           //
 //             (array)              //
 //////////////////////////////////////
 
-$local = array('1', '2', '3', '4', '5');
+$local = array('L\'ÉTANG', '2', '3', '4', '5');
 
 //////////////////////////////////////
 //           Info Societe           //
@@ -26,7 +26,7 @@ $societeLoc = 'Ville';
 //////////////////////////////////////
 
 
-$descMini = '';
+$descMini = 'l\'été il fait chaud';
 
 //////////////////////////////////////
 
@@ -34,6 +34,11 @@ echo'<ul>';
 
 for ($i=0; $i<count($keyWords); $i++) {
     for ($ii=0; $ii<count($local); $ii++){
+
+        $jeanMoricePimpon = array('\'', 'é', 'É', 'È', 'è', 'ç', 'Ç', 'À', 'à', 'â', 'ê', 'î', 'ô', 'û', 'Â', 'Ô', 'Î', 'Ê', 'Û');
+        $jeanMoriceChiuauaForIsa = array('-', 'e', 'E', 'E', 'e', 'c', 'C', 'A', 'a', 'a', 'e', 'i', 'o', 'u', 'A', 'O', 'I', 'E', 'U');
+
+
 
         $LOL = str_replace('-', ' ', $keyWords[$i]);
         $LOL .= ' '.ucfirst(str_replace('-', ' ', $local[$ii]));
@@ -62,9 +67,9 @@ for ($i=0; $i<count($keyWords); $i++) {
 
         $template = '
             <?php
-                $title = \''.$societe.' - '.ucfirst($LOL).'\';
-                $keywords = \''.str_replace('-', ' ', $keyWords[$i]).', '.str_replace('-', ' ', $local[$ii]).'\';
-                $description = \''.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.$local[$ii].'\';
+                $title = "'.$societe.' - '.ucfirst($LOL).'";
+                $keywords = "'.$keyWords[$i].', '.$local[$ii].'";
+                $description = "'.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.$local[$ii].'";
             ?>';
         
         $template .='';
@@ -80,7 +85,7 @@ for ($i=0; $i<count($keyWords); $i++) {
 //////////////////////////////////////
 
 
-        $open = fopen('../../pp/'.$keyWords[$i].'-'.$local[$ii].".php", "w");
+        $open = fopen('../../pp/'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$i])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ii])).".php", "w");
         fwrite($open, $template);
         fclose($open);
 
@@ -101,8 +106,8 @@ $xml = simplexml_load_file('pokerSRC.xml');
 for ($l=0; $l<count($keyWords); $l++) {
     for ($ll=0; $ll<count($local); $ll++){
 
-        $xml->addChild('link', $keyWords[$l].'-'.$local[$ll].'.html');
-        $footerSuperCool ='<a href="'.$keyWords[$l].'-'.$local[$ll].'.html">'.ucfirst(str_replace('-', ' ', $keyWords[$l])).' '.ucfirst(str_replace('-', ' ', $local[$ll])).'</a> ';
+        $xml->addChild('link', strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$l])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ll])).'.html');
+        $footerSuperCool ='<a href="'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$l])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ll])).'.html">'.$keyWords[$l].' '.ucfirst($local[$ll]).'</a> ';
         echo '<pre><xmp>'.$footerSuperCool.'</xmp></pre>';
 
     }}

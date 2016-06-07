@@ -1,4 +1,7 @@
 <?php
+
+
+
 /*
  *
  *  ex : <?= $configSite->sitename; ?>
