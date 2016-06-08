@@ -4,14 +4,14 @@
 //             (array)              //
 //////////////////////////////////////
 
-$keyWords = array('L\'ÉTÉ', 'B', 'C', 'D');
+$keyWords = array('L\'ÉTÉ-de', 'B', 'C', 'D');
 
 //////////////////////////////////////
 //           Localisation           //
 //             (array)              //
 //////////////////////////////////////
 
-$local = array('L\'ÉTANG', '2', '3', '4', '5');
+$local = array('L\'ÉTANG-ici', '2', '3', '4', '5');
 
 //////////////////////////////////////
 //           Info Societe           //
@@ -68,8 +68,8 @@ for ($i=0; $i<count($keyWords); $i++) {
         $template = '
             <?php
                 $title = "'.$societe.' - '.ucfirst($LOL).'";
-                $keywords = "'.$keyWords[$i].', '.$local[$ii].'";
-                $description = "'.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.$local[$ii].'";
+                $keywords = "'.str_replace('-', ' ', $keyWords[$i]).', '.str_replace('-', ' ', $local[$ii]).'";
+                $description = "'.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.str_replace('-', ' ', $local[$ii]).'";
             ?>';
         
         $template .='';
@@ -99,17 +99,19 @@ echo'</ul><br>';
 //////////////////////////////////////
 //         Génération XML           //
 //////////////////////////////////////
-
-
-$xml = simplexml_load_file('pokerSRC.xml');
+$xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><mydoc></mydoc>');
+$person = $xml->addChild('linkablePokerPage');
 
 for ($l=0; $l<count($keyWords); $l++) {
     for ($ll=0; $ll<count($local); $ll++){
+        
+        $person->addChild('url', strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$l])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ll])).'.html');
+        $person->addChild('name', str_replace('-', ' ', $keyWords[$l]).' '.str_replace('-', ' ', $local[$l]));
 
-        $xml->addChild('link', strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$l])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ll])).'.html');
-        $footerSuperCool ='<a href="'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$l])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ll])).'.html">'.$keyWords[$l].' '.ucfirst($local[$ll]).'</a> ';
-        echo '<pre><xmp>'.$footerSuperCool.'</xmp></pre>';
+
 
     }}
+
+echo $xml->asXML();
 
 $xml->saveXML('../poker.xml');
