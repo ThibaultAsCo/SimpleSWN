@@ -67,7 +67,7 @@ for ($i=0; $i<count($keyWords); $i++) {
 
         $template = '
             <?php
-                $title = "'.$societe.' - '.ucfirst($LOL).'";
+                $title = "'.ucfirst($LOL).'";
                 $keywords = "'.str_replace('-', ' ', $keyWords[$i]).', '.str_replace('-', ' ', $local[$ii]).'";
                 $description = "'.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.str_replace('-', ' ', $local[$ii]).'";
             ?>';
