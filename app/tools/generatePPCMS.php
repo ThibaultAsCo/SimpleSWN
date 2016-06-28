@@ -89,7 +89,7 @@ for ($i=0; $i<count($keyWords); $i++) {
         fwrite($open, $template);
         fclose($open);
 
-        $template .= '';
+        //$template .= '';
 
         echo '<li>Fichier <strong>'.$keyWords[$i].'-'.$local[$ii].'</strong>.php cr&eacute;&eacute;</li>';
     }
