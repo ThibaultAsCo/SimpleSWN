@@ -99,12 +99,12 @@ echo'</ul><br>';
 //////////////////////////////////////
 //         Génération XML           //
 //////////////////////////////////////
-$xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><mydoc></mydoc>');
-$person = $xml->addChild('linkablePokerPage');
+$xml = new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><linkablePokerPages></linkablePokerPages>');
+
 
 for ($l=0; $l<count($keyWords); $l++) {
     for ($ll=0; $ll<count($local); $ll++){
-        
+        $person = $xml->addChild('linkablePokerPage');
         $person->addChild('url', strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $keyWords[$l])).'-'.strtolower(str_replace($jeanMoricePimpon, $jeanMoriceChiuauaForIsa, $local[$ll])).'.html');
         $person->addChild('name', str_replace('-', ' ', $keyWords[$l]).' '.str_replace('-', ' ', $local[$ll]));
 
