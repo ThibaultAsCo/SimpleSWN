@@ -19,7 +19,7 @@ class PokerPage {
 
         $this->momo = simplexml_load_file('app/poker.xml');
 
-        $this->outMomo = '<section class="outerMask"><div class="row innerMask">';
+        $this->outMomo = '<section class="outerMask col-md-12"><div class="row innerMask">';
         foreach($this->momo->linkablePokerPage as $this->plop){
 
             $this->outMomo .= '<a href="'.$this->plop->url.'">'.$this->plop->name.'</a> ';
