@@ -72,7 +72,7 @@ for ($i=0; $i<count($keyWords); $i++) {
                 $description = "'.$societe.' - '.ucfirst($LOL).' - '.$descMini.' '.str_replace('-', ' ', $local[$ii]).'";
             ?>';
         
-        $template .='';
+        $template .='<h1>'.$LOL.'</h1>';
 
         shuffle($textOut);
         foreach($textOut as $finalOut)
