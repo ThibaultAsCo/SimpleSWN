@@ -26,6 +26,9 @@
     <body>
 
       <h1>Chaussette !!</h1>
+      <p>
+        Coucou tu veux .... 
+      </p>
 
         <?= $data; ?>
 
