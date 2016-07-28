@@ -1,0 +1,17 @@
+/* Constante formulaire */
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.no-padding-left {
+  padding-left: 0px;
+}
+.no-padding-right {
+  padding-right: 0px;
+}
+.no-padding-right-xs {
+  padding-right: 0px;
+}
+.no-padding-left-xs {
+  padding-left: 0px;
+}

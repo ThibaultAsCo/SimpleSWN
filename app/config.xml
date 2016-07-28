@@ -2,22 +2,22 @@
 
 <websiteconfig>
 
-    <sitename>Nom du site</sitename>
+    <sitename>AsCo Consulting</sitename>
 
-    <address>7 rue de la Rue</address>
-    <cp>73000</cp>
-    <city>Chambery</city>
+    <address>18 Rue Joseph CUGNOT</address>
+    <cp>38300</cp>
+    <city>BOURGOIN JALLIEU</city>
 
     <mail>mail@mail.fr</mail>
-    <tel>0101010101</tel>
+    <tel>04 74 28 28 85</tel>
 
-    <siret>00000000000000000</siret>
+    <siret>79006722700021</siret>
 
     <weblinkhref>http://www.site.com</weblinkhref>
-    <weblink>www.site.com</weblink>
+    <weblink>site.com</weblink>
 
     <defaultpage>accueil</defaultpage>
 
-    <authorsite>Moi</authorsite>
+    <authorsite>As Co Consulting</authorsite>
 
 </websiteconfig>

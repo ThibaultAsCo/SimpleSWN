@@ -1,0 +1,550 @@
+@import "variables.less";
+@import "mixins.less";
+
+html{
+	font-size: 16px;
+	font-family:@primaryFont;
+}
+
+body {
+}
+
+
+.darkenColor{background:@darkenColor}
+.greyColor{background: @gray-lighter;}
+.margin-top{margin-top: 15px;}
+
+// --------------------------
+// Titres
+// --------------------------
+h1, h2, h3, h4, h5, h6 {
+	font-family:@primaryFont;
+
+}
+h1{
+	margin: 0 0 2rem 0;
+	font-size:1.1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: @color2Client;
+}
+	#accueil h1{margin-top: 30px;}
+
+h3{
+  box-sizing: border-box;
+  background:@color1Client;
+  padding:10px;
+  text-transform: uppercase;
+  color:@lightenColor;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+h4{
+	font-style: italic;
+	color:@color1Client;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+hr{
+	// background:@color2Client;
+	height: 1px;
+}
+// --------------------------
+// Texte / Span / Titre
+// --------------------------
+p {
+	font-size: 1rem;
+	font-family:@primaryFont;
+}
+
+a{
+	color:@color2Client;
+
+	&:hover{
+		color:lighten(@color2Client, 10%);
+	}
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+	text-decoration: none;
+
+}
+
+.color1{
+	fill: @lightenColor;
+}
+
+.miseAvant{
+	display: inline-block;
+	background: @color2Client;
+	color:@lightenColor;
+	padding: 30px;
+	margin: 1rem 0;
+
+	p{
+		font-size: 1.56rem;
+		line-height: 2.31rem;
+		font-family: @primaryFont;
+		font-style: italic;
+	}
+}
+
+// --------------------------
+// Cible tous les pictos
+// --------------------------
+[class^="icon-"] {
+	fill:@lightenColor;
+	width: 20px;
+}
+// --------------------------
+// Gestion du flexbox
+// --------------------------
+.flex{
+	flex-direction: column;
+}
+// --------------------------
+// Formulaire de contact
+// --------------------------
+.intro-mail{
+}
+form{
+	margin: 2rem 0 1rem;
+
+	label{
+		display: inline-block;
+		height: 30px;
+		width: 100%;
+		margin: 0;
+		font-family: @primaryFont;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 30px;
+		// background: olive;
+	}
+
+	.form-control{
+		box-sizing: border-box;
+		height: 40px;
+		padding: 10px;
+		margin: 0;
+		border-radius: 0;
+		font-size: 1rem;
+	}
+
+	.text-danger{
+		background: @formulaireAlert;
+		width: 100%;
+		padding:0 10px;
+
+		line-height: 30px;
+		color:darken(@formulaireAlert, 30%);
+		font-weight: 500;
+
+		ul {
+			padding:0;
+
+			li{list-style: none;}
+		}
+	}
+
+	textarea{min-height: 200px;}
+
+	.captcha{
+		visibility: hidden;
+		height: 1px;
+		width:100px;
+		font-size: 0.5rem;
+		padding: 0.5rem;
+	}
+
+	.btn{
+		display: block;
+		border-radius: 0px;
+		height: 50px;
+		width:150px;
+		margin: 0 auto;
+		text-transform: uppercase
+	}
+} // Fin formulaire
+
+.loi-informatique{
+	display: inline-block;
+	box-sizing: border-box;
+	padding: 1rem 0;
+
+	font-family: @primaryFont;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 0.7rem;
+	line-height: 1.1rem;
+	color:lighten(@darkenColor, 30%);
+	text-align: justify;
+}
+
+// --------------------------
+// Header
+// --------------------------
+header {
+	background:@color1Client;
+	min-height: 50px;
+
+	/* Menu Top */
+	.navbar {
+		font-family:@primaryFont;
+		background: @color1Client;
+		border: none;
+		border-radius: 0;
+		margin-bottom: 0;
+
+		.navbar-nav {
+			a{
+				height: 50px;
+				padding: 15px 30px;
+
+				font-weight: 400;
+				color:@lightenColor;
+				text-transform: uppercase;
+
+					&:hover{
+						background: @color2Client;
+						color: @lightenColor;
+					}
+				}// Fin a
+
+				// Bouton actif
+				.active > a,
+				.active > a:focus,
+				.active > a:hover{
+					color:@lightenColor;
+					background: @color2Client;
+				}
+
+				//Dropdown menu
+				.dropdown-menu{
+					color:@lightenColor;
+					background: @darkenColor;
+					li{
+						a{
+							color:@lightenColor !important;
+							line-height: 50px;
+						}
+					}
+				}
+
+				.open>a,
+				.open>a:focus,
+				.open>a:hover{
+					color:@lightenColor;
+					background: @color2Client;
+				}
+
+		}// Fin .navbar-nav
+	}// Fin .navbar
+
+
+
+
+	.logo{
+		display: inline-block;
+		width: 100%;
+		height: 50px;
+		margin: 0;
+
+		color:@lightenColor;
+		font-size:1.1rem;
+		font-weight: 400;
+		line-height: 50px;
+		text-transform: uppercase;
+
+
+		span{font-family:@primaryFont;}
+	}
+
+
+} // Fin Header
+
+
+
+
+// --------------------------
+// Slider
+// --------------------------
+.slider{
+	position: relative;
+	width:100%;
+	margin-bottom: 3.75rem;
+}
+
+
+// --------------------------
+// Footer
+// --------------------------
+
+footer{
+	min-height: 60px;
+	background:@darkenColor;
+	font-weight: 300;
+	color:@lightenColor;
+	font-size: 0.7rem;
+
+	p, a{
+		font-size: 0.7rem;
+		margin: 0;
+		text-align: right;
+		color:@lightenColor;
+		&:hover{color:@lightenColor;}
+	}
+
+	ul{margin-bottom: 0px;}
+
+
+	.content-footer{
+		height: 60px;
+		line-height: 60px;
+		padding: 0;
+	}
+
+	.AsCoConsulting{
+		font-size: 0.7rem;
+		line-height: 60px;
+
+		// Logo Asco
+		.icon-AsCoConsulting{
+			width: 91px;
+			margin-top: 14px;
+			margin-left: 5px;
+			color:@lightenColor;
+		}
+	}
+
+
+
+	// Menu footer
+	.menu-footer{
+		list-style: none;
+			ul{
+				display: inline-block;
+				float: right;
+			li{
+				display: inline-block;
+				float: left;
+				margin-right: 0.5rem;
+				font-weight: 300;
+
+				a{
+					color:@lightenColor;
+					font-size: 0.7rem;
+					line-height: 0.7rem;
+					}
+			}
+
+		}
+	}
+
+	section{
+		padding: 0;
+		margin: 0;
+		min-height: 0;
+		height: auto;
+	}
+}
+
+
+// --------------------------
+// Contenus
+// --------------------------
+section{
+	font-size: 1.1rem;
+	line-height:1.62rem;
+	padding:2rem 0;
+	min-height: 89vh;
+}
+
+.grilleImage{
+	img{
+			width: 100%;
+	}
+}
+.miseAvant{
+	display: inline-block;
+	background: @color1Client;
+	color:@lightenColor;
+	padding: 30px;
+	margin: 1rem 0;
+
+	p{
+		font-size: 1.56rem;
+		line-height: 2.31rem;
+		font-family: @primaryFont;
+		font-style: italic;
+	}
+}
+
+
+// --------------------------
+// Tablettes - SM
+// --------------------------
+@media(min-width:768px) {
+
+	.navbar-right{float: none!important;}
+
+	header{
+		.navbar{
+
+			.navbar-collapse.collapse{
+				width: 100%;
+			}
+
+			.navbar-nav{
+				min-width: 400px;
+				margin: 0 auto;
+				li{
+					padding: 0;
+
+					a{
+						padding: 0 15px;
+						line-height: 50px;
+					}
+				}
+
+			} //Fin navbar-nav
+		} // Fin navbar
+		.logo{
+			text-align: center;
+		}
+	}
+
+	.slogan{
+		display: inline-block;
+		position: absolute;
+
+		top: 48px;
+		left:30px;
+		max-width: 385px;
+		padding: 25px;
+
+		background: rgba(17, 17, 17, 0.5);
+
+		color:@lightenColor;
+		font-family:@primaryFont;
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+	footer{
+		p{text-align: center;}
+	}
+	.contact{
+		margin: 0 10px;
+	}
+}
+
+// --------------------------
+// Grandes tablettes - MD
+// --------------------------
+@media(min-width:992px) {
+
+	.no-padding-right-xs{padding-right:15px;}
+	.no-padding-left-xs{padding-left:15px;}
+
+	h1{font-size:1.7rem;}
+
+	header{
+		.navbar{
+			.navbar-collapse.collapse{
+				width: auto;
+			}
+
+			.navbar-nav{
+				margin: 0 0 0 220px;
+				li{
+					padding: 0;
+				}
+			}
+		} //Fin navbar
+		.logo{text-align: left;}
+	}
+	.slogan{
+		top: 109px;
+	}
+}
+
+// --------------------------
+// Desktop - LG
+// --------------------------
+@media(min-width:1200px) {
+
+	.flex{
+		flex-direction: row;
+	}
+
+	header{
+		.navbar{
+			.navbar-nav{
+				margin: 0;
+				li{
+					a{
+						&:hover{background:@color2Client}
+					}
+					li.active{background:lighten(@color1Client, 10%);}
+
+				}
+			}
+		}
+	}
+
+	.slogan{
+		top: 109px;
+	}
+
+	section{min-height: 89vh;}
+}// Fin Desktop
+
+
+
+
+section.success {
+	background: @brand-success;
+	color: white;
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+      color: @brand-primary;
+      outline: none;
+    }
+}
+
+
+
+.btn:focus,
+.btn:active,
+.btn.active {
+	outline: none;
+}
+
+// .scroll-top {
+//     position: fixed;
+//     right: 2%;
+//     bottom: 2%;
+//     width: 50px;
+//     height: 50px;
+//     z-index: 1049;
+//     .btn {
+//     	font-size: 20px;
+// 	    width: 50px;
+// 	    height: 50px;
+// 	    border-radius: 100%;
+// 	    line-height: 28px;
+// 	    &:focus {
+// 	    	outline: none;
+// 	    }
+//     }
+// }
