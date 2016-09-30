@@ -31,4 +31,22 @@ class PokerPage {
 
         return $this->outMomo;
     }
+
+
+    public function pokerSiteMap(){
+
+        $this->momo = simplexml_load_file('app/poker.xml');
+
+        $this->outMomo = '<ul>';
+        foreach($this->momo->linkablePokerPage as $this->plop){
+
+            $this->outMomo .= '<li><a href="'.$this->plop->url.'">'.$this->plop->name.'</a></li>';
+        }
+
+
+        $this->outMomo .= '</ul>';
+
+
+        return $this->outMomo;
+    }
 }

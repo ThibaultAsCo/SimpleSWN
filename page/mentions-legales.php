@@ -4,16 +4,14 @@
     $keywords = '';
 ?>
 
-  <section>
-    <div class="row">
-      <div class="container">
-        <div class="col-lg-12">
-          <h1>Mentions légales</h1>
-        </div>
-      </div>
-    </div>
+<div class="title">
+  <div class="container">
+    <h1>Mentions légales</h1>
+  </div>
+</div>
 
-    <div class="row">
+<section>
+
       <div class="container">
 
         <div class="col-xs-12 col-sm-6">
@@ -28,9 +26,9 @@
 
           <p>
              <b>Hébergeur :</b> OVH<br/>
-             <b>Siège social :</b> 2 rue Kellermann - 59100 Roubaix - France<br/>
-             <b>RCS Lille Métropole</b> 424 761 419 00045<br/>
-             <b>Code APE</b> 6202A<br/>
+             <b>Siège social :</b> 2 rue Kellermann - 59100 ROUBAIX - FRANCE<br/>
+             <b>RCS Lille Métropole :</b> 424 761 419 00045<br/>
+             <b>Code APE :</b> 6202A<br/>
            </p>
         </div> <!-- Fin colonne gauche -->
 
@@ -101,7 +99,6 @@
 
       </div> <!-- Fin container -->
 
-    </div> <!-- Fin row -->
 
 
 </section>

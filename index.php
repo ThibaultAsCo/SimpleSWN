@@ -1,5 +1,5 @@
 <?php require'app/core/core.php';?>
-
+<?php $pp = new PokerPage(); ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -14,15 +14,27 @@
         <title><?= $title ?> - <?= $configSite->sitename; ?></title>
 
         <link rel="icon" href="">
-        <link rel="stylesheet" href="assets/css/pp.css" />
 
         <!-- Bootstrap Core CSS -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <!-- CSS -->
-        <link href="assets/css/style.css" rel="stylesheet" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <!-- OWL carroussel style -->
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <!-- OWL carroussel Theme -->
+        <link rel="stylesheet" href="assets/css/owl.theme.css">
 
-        <!-- Open Sans -->
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="assets/css/pp.css"  >
+
+        <!-- CSS Template -->
+        <link rel="stylesheet" href="assets/css/template.css">
+        <!-- CSS Editable-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+
+        <!-- Roboto + Noto Sans -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:300,400,500,700" rel="stylesheet">
+
+
         <!--<link rel="stylesheet" href="assets/css/pp.css" />-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,23 +47,17 @@
     <body>
 
       <header>
+        <?php include ('assets/template/coordonneesHeader.php'); ?>
         <div class="container">
           <!-- Menu  -->
           <?php include('assets/template/menu.php'); ?>
         </div>
       </header>
 
-      <div class="row">
-        <!-- Diaporama -->
-        <?php include('assets/template/diaporama.php'); ?>
-      </div>
 
       <!-- Contenus des pages -->
-      <section>
-        <div class="container">
-          <?= $data; ?>
-        </div>
-      </section>
+      <?= $data; ?>
+
 
       <!-- Footer -->
       <footer>
@@ -61,12 +67,15 @@
 
         <!-- PP -->
         <div class="hidden-md hidden-sm hidden-xs text-center">
-          <?php $pp = new PokerPage(); ?>
+
           <?= $pp->pokerFoo(); ?>
         </div>
       </footer>
 
     </body>
+
+    <!--  jQuery 1.7+  -->
+    <script src="assets/js/jquery-1.9.1.min.js"></script>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="assets/js/jquery.js"></script>
@@ -79,6 +88,18 @@
 
     <!-- Item menu actif -->
     <script src="assets/js/activeMenu.js"></script>
+
+
+
+    <!-- Owl carroussel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <script type="assets/js/carousel.personnalisation.js"></script>
+
+    <!-- WOW JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 
 
 

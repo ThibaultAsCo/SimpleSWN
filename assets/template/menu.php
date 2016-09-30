@@ -1,11 +1,12 @@
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default row flex">
+    <nav class="navbar navbar-default row">
 
       <!-- Logo desktop -->
       <div class="col-xs-8 col-sm-12 col-md-4">
-        <a href="accueil.html" class="logo no-padding" alt="accueil">
+        <a href="accueil.html" class="logo no-padding" title="accueil">
           <span class="nom">Template As&Co</span>
+          <span class="slogan">Ici on pose un slogan</span>
         </a>
       </div>
 
@@ -22,42 +23,42 @@
       </div>
 
       <!-- Menu classique -->
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 no-padding collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+      <div class="navbar-collapse collapse no-padding col-xs-12 col-sm-12 col-md-8 col-lg-6 " id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
               <li class="hidden">
                   <a href="#page-top"></a>
               </li>
               <li >
-                  <a href="accueil.html" alt="accueil">Accueil</a>
+                  <a href="accueil.html" title="accueil">Accueil</a>
               </li>
               <li >
-                  <a href="#" alt="">Item #1</a>
+                  <a href="#" title="">Item #1</a>
               </li>
               <li >
-                  <a href="#" alt="">Item #2</a>
+                  <a href="#" title="">Item #2</a>
               </li>
 
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Item #3
                   <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#" alt="">Sub Item #1</a></li>
-                  <li><a href="#" alt="">Sub Item #2</a></li>
-                  <li><a href="#" alt="">Sub Item #3</a></li>
+                  <li><a href="#" title="">Sub Item #1</a></li>
+                  <li><a href="#" title="">Sub Item #2</a></li>
+                  <li><a href="#" title="">Sub Item #3</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#" alt="">Sub Item #4</a></li>
+                  <li><a href="#" title="">Sub Item #4</a></li>
                 </ul>
               </li>
 
 
 
               <li >
-                  <a href="contact.html" alt="contact">Contact</a>
+                  <a href="contact.html" title="contact">Contact</a>
               </li>
 
-              <hr class="hidden-sm hidden-md hidden-lg">
+              <li class="hidden-sm hidden-md hidden-lg sepa"></li>
               <li class="hidden-sm hidden-md hidden-lg">
-                <a href="./page/mentions-legales.html" alt="mentions légales">Mentions légales</a>
+                <a href="mentions-legales.html" title="Mentions légales">Mentions légales</a>
               </li>
 
 

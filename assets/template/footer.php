@@ -18,8 +18,9 @@
     <!-- Menu footer -->
     <div class="hidden-xs col-sm-6 menu-footer content-footer">
       <ul>
-        <li><a href="index.html" title="Accueil du site" alt="accueil">Accueil</a></li>
-        <li><a href="mentions-legales.html" title="Mentions légales" alt="Mentions légales">Mentions légales</a></li>
-        <li><a href="contact.html" title="Contacter <?= $configSite->sitename; ?>" alt="contact">Contact</a></li>
+        <li><a href="index.html" title="Accueil du site">Accueil</a></li>
+        <li><a href="mentions-legales.html" title="Mentions légales">Mentions légales</a></li>
+        <li><a href="contact.html" title="Contacter <?= $configSite->sitename; ?>">Contact</a></li>
+        <li><a href="sitemap.html" title="Plan du site">Plan du site</a></li>
       </ul>
     </div>
