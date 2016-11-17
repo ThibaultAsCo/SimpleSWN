@@ -5,7 +5,7 @@
       <!-- Logo desktop -->
       <div class="col-xs-8 col-sm-12 col-md-4">
         <a href="accueil.html" class="logo no-padding" title="accueil">
-          <span class="nom">Template As&Co</span>
+          <span class="nom">Template AsCo</span>
           <span class="slogan">Ici on pose un slogan</span>
         </a>
       </div>
@@ -28,15 +28,16 @@
               <li class="hidden">
                   <a href="#page-top"></a>
               </li>
-              <li >
+              <li>
                   <a href="accueil.html" title="accueil">Accueil</a>
               </li>
-              <li >
+              <li>
                   <a href="#" title="">Item #1</a>
               </li>
-              <li >
+              <li>
                   <a href="#" title="">Item #2</a>
               </li>
+
 
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Item #3
@@ -51,8 +52,7 @@
               </li>
 
 
-
-              <li >
+              <li>
                   <a href="contact.html" title="contact">Contact</a>
               </li>
 
