@@ -16,5 +16,3 @@ RewriteRule ^([A-Za-z0-9-_]+)/([A-Za-z0-9-_]+)/?.html$ index.php?p=$1&$2 [L]
 #ErrorDocument 403 http://www.site.com
 #ErrorDocument 404 http://www.site.com
 #ErrorDocument 500 http://www.site.com
-
-

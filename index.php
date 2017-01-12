@@ -23,11 +23,6 @@
         <!-- OWL carroussel Theme -->
         <link rel="stylesheet" href="assets/css/owl.theme.css">
 
-
-        <link rel="stylesheet" href="assets/css/pp.css"  >
-
-        <!-- CSS Template -->
-        <link rel="stylesheet" href="assets/css/template.css">
         <!-- CSS Editable-->
         <link rel="stylesheet" href="assets/css/style.css">
 

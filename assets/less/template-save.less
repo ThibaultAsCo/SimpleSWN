@@ -416,3 +416,162 @@ section{
 		font-style: italic;
 	}
 }
+
+
+// --------------------------
+// Tablettes - SM
+// --------------------------
+@media(min-width:768px) {
+
+	.col-sm-no-padding{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.col-sm-padding{
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+
+	header{
+		.navbar{
+			.navbar-nav{
+				min-width: 400px;
+				li{
+					padding: 0;
+
+					a{
+						padding: 0 15px;
+						line-height: 50px;
+					}
+				}
+			} //Fin navbar-nav
+		} // Fin navbar
+	}//Fin header
+
+
+	footer{
+		p{text-align: center;}
+	}
+	.contact{
+		margin: 0 10px;
+	}
+
+	.sitemap{
+		ul{
+			li{
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+}
+
+// --------------------------
+// Grandes tablettes - MD
+// --------------------------
+@media(min-width:992px) {
+
+	.col-md-no-padding{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.col-md-padding{
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+	header{
+		.navbar{
+			.navbar-collapse.collapse{
+				width: auto;
+			}
+
+			.navbar-nav{
+
+				li{
+					padding: 0;
+				}
+			}
+		} //Fin navbar
+	}
+
+
+
+}
+
+// --------------------------
+// Desktop - LG
+// --------------------------
+@media(min-width:1200px) {
+
+	.col-lg-no-padding{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.col-lg-padding{
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.flex{
+		flex-direction: row;
+	}
+
+	header{
+		.navbar{
+			.navbar-nav{
+				margin: 0;
+				li{
+					a{
+						&:hover{background:@color2Client}
+					}
+					li.active{background:lighten(@color1Client, 10%);}
+				}
+			}
+		}
+	}
+}// Fin Desktop
+
+
+
+
+section.success {
+	background: @brand-success;
+	color: white;
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+      color: @brand-primary;
+      outline: none;
+    }
+}
+
+
+
+.btn:focus,
+.btn:active,
+.btn.active {
+	outline: none;
+}
+
+// .scroll-top {
+//     position: fixed;
+//     right: 2%;
+//     bottom: 2%;
+//     width: 50px;
+//     height: 50px;
+//     z-index: 1049;
+//     .btn {
+//     	font-size: 20px;
+// 	    width: 50px;
+// 	    height: 50px;
+// 	    border-radius: 100%;
+// 	    line-height: 28px;
+// 	    &:focus {
+// 	    	outline: none;
+// 	    }
+//     }
+// }

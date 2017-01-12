@@ -52,7 +52,7 @@ h6 {
 }
 p {
   font-size: 1rem;
-  font-family: 'Noto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 a {
@@ -198,7 +198,7 @@ header .navbar .logo .nom {
   font-family: 'Roboto', sans-serif;
 }
 header .navbar .logo .slogan {
-  font-family: 'Noto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 header .navbar .navbar-nav a {
   height: 50px;
@@ -208,14 +208,14 @@ header .navbar .navbar-nav a {
   text-transform: uppercase;
 }
 header .navbar .navbar-nav a:hover {
-  background: #d85820;
-  color: #ffffff;
+  color: #212121;
+  background: none;
 }
 header .navbar .navbar-nav .active > a,
 header .navbar .navbar-nav .active > a:focus,
 header .navbar .navbar-nav .active > a:hover {
-  color: #ffffff;
-  background: #d85820;
+  color: #212121;
+  background: none;
 }
 header .navbar .navbar-nav .dropdown-menu {
   color: #ffffff;
@@ -299,8 +299,6 @@ footer section {
 section {
   font-size: 1.1rem;
   line-height: 1.62rem;
-  padding: 2rem 0;
-  min-height: 89vh;
 }
 .grilleImage img {
   width: 100%;
@@ -319,9 +317,16 @@ section {
   font-style: italic;
 }
 @media (min-width: 768px) {
+  .col-sm-no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col-sm-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   header .navbar .navbar-nav {
     min-width: 400px;
-    margin: 0 auto;
   }
   header .navbar .navbar-nav li {
     padding: 0;
@@ -342,29 +347,30 @@ section {
   }
 }
 @media (min-width: 992px) {
-  .no-padding-right-xs {
-    padding-right: 15px;
+  .col-md-no-padding {
+    padding-left: 0;
+    padding-right: 0;
   }
-  .no-padding-left-xs {
+  .col-md-padding {
     padding-left: 15px;
+    padding-right: 15px;
   }
   header .navbar .navbar-collapse.collapse {
     width: auto;
   }
-  header .navbar .navbar-nav {
-    margin: 0 0 0 220px;
-  }
   header .navbar .navbar-nav li {
     padding: 0;
   }
-  header .logo {
-    text-align: left;
-  }
-  .slogan {
-    top: 109px;
-  }
 }
 @media (min-width: 1200px) {
+  .col-lg-no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .col-lg-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .flex {
     flex-direction: row;
   }
@@ -376,12 +382,6 @@ section {
   }
   header .navbar .navbar-nav li li.active {
     background: #3b3b3b;
-  }
-  .slogan {
-    top: 109px;
-  }
-  section {
-    min-height: 89vh;
   }
 }
 section.success {
