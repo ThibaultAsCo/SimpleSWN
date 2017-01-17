@@ -17,32 +17,30 @@
 /* Constante formulaire */
 @formulaireAlert:#EF9A9A;
 
-// .flex{
-//   display: -webkit-box;
-//   display: -moz-box;
-//   display: -ms-flexbox;
-//   display: -webkit-flex;
-//   display: flex;
-//   align-items: center;
-// }
-//
-// .flexRow{
-//   display: -webkit-box;
-//   display: -moz-box;
-//   display: -ms-flexbox;
-//   display: -webkit-flex;
-//   display: flex;
-//   align-items: center;
-//   flex-direction: row;
-// }
 
-.no-padding{
-  padding-left: 0px;
-  padding-right: 0px;
+.flex() {
+    display: -webkit-box;
+    display: -moz-box;
+    display:-webkit-flex;
+    display: -ms-flexbox;
+    display:flex;
+}
+.flex-direction(@direction) {
+  -ms-flex-direction:@direction;
+ -webkit-flex-direction:@direction;
+  flex-direction:@direction;
 }
 
-.no-padding-left{padding-left:0px;}
-.no-padding-right{padding-right:0px;}
+.transition (@prop: all, @time: 1s, @ease: linear) {
+	-webkit-transition: @prop @time @ease;
+	-moz-transition: @prop @time @ease;
+	-o-transition: @prop @time @ease;
+	-ms-transition: @prop @time @ease;
+	transition: @prop @time @ease;
+}
 
-.no-padding-right-xs{padding-right:0px;}
-.no-padding-left-xs{padding-left:0px;}
+.border-radius (@radius: 5px) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}

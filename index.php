@@ -57,14 +57,8 @@
 
       <!-- Footer -->
       <footer>
-        <div class="container no-padding">
+        <div class="container">
           <?php include('assets/template/footer.php'); ?>
-        </div>
-
-        <!-- PP -->
-        <div class="hidden-md hidden-sm hidden-xs text-center">
-
-          <?= $pp->pokerFoo(); ?>
         </div>
       </footer>
 

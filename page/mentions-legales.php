@@ -4,15 +4,14 @@
     $keywords = '';
 ?>
 
-<div class="title">
-  <div class="container">
-    <h1>Mentions légales</h1>
-  </div>
-</div>
 
 <section>
 
       <div class="container">
+
+        <div class="col-xs-12">
+          <h1>Mentions légales</h1>
+        </div>
 
         <div class="col-xs-12 col-sm-6">
 

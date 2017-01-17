@@ -4,18 +4,10 @@
     $keywords = '';
 ?>
 
-
-<div class="title">
-  <div class="container">
-    <h1>Plan du site</h1>
-  </div>
-</div>
-
-
-
 <section class="sitemap">
   <div class="container">
     <div class="col-xs-12">
+      <h1>Plan du site</h1>
       <ul>
         <li><a href="index.html" title="Accueil du site">Accueil</a></li>
 

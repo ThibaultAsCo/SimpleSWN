@@ -1,20 +1,4 @@
 /* Constante formulaire */
-.no-padding {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.no-padding-left {
-  padding-left: 0px;
-}
-.no-padding-right {
-  padding-right: 0px;
-}
-.no-padding-right-xs {
-  padding-right: 0px;
-}
-.no-padding-left-xs {
-  padding-left: 0px;
-}
 html {
   font-size: 16px;
 }
@@ -41,19 +25,14 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif;
 }
-.title {
-  height: 70px;
-  background: #ac4619;
-}
-.title h1 {
-  color: #FFF;
-  line-height: 70px;
-  margin: 0;
+h1 {
+  margin-bottom: 2rem;
 }
 p {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  line-height: 1.62rem;
 }
 a {
   color: #D85820;
@@ -68,9 +47,6 @@ a:active,
 a.active {
   text-decoration: none;
 }
-.color1 {
-  fill: #FFF;
-}
 .miseAvant {
   display: inline-block;
   background: #D85820;
@@ -84,8 +60,38 @@ a.active {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
 }
+.btn {
+  height: 50px;
+  width: 200px;
+  display: -moz-box;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  text-transform: uppercase;
+}
+.btn .icon-btn {
+  width: 50px;
+  display: -moz-box;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 [class^="icon-"] {
-  fill: #FFF;
   width: 20px;
 }
 .flex {
@@ -171,6 +177,23 @@ header {
   background: #212121;
   color: #FFF;
   min-height: 50px;
+}
+header .coordonneesHeader {
+  display: -moz-box;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .coordonneesHeader address {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 0;
 }
 header .navbar {
   background: none;
@@ -258,19 +281,39 @@ footer ul {
   margin-bottom: 0px;
 }
 footer .content-footer {
+  display: -moz-box;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: column;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   height: 60px;
-  line-height: 60px;
   padding: 0;
-}
-footer .AsCoConsulting {
   font-size: 0.7rem;
-  line-height: 60px;
 }
-footer .AsCoConsulting .icon-AsCoConsulting {
+footer .content-footer .logoAsCo {
+  display: -moz-box;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+footer .content-footer .icon-AsCoConsulting {
   width: 91px;
-  margin-top: 14px;
-  margin-left: 5px;
-  color: #FFF;
+  fill: #FFF;
 }
 footer .menu-footer {
   list-style: none;
@@ -287,40 +330,17 @@ footer .menu-footer ul li {
 }
 footer .menu-footer ul li a {
   color: #FFF;
-  font-size: 0.7rem;
-  line-height: 0.7rem;
-}
-footer section {
-  padding: 0;
-  margin: 0;
-  min-height: 0;
-  height: auto;
 }
 section {
+  padding: 2rem 0;
   font-size: 1.1rem;
   line-height: 1.62rem;
-}
-.grilleImage img {
-  width: 100%;
-}
-.miseAvant {
-  display: inline-block;
-  background: #212121;
-  color: #FFF;
-  padding: 30px;
-  margin: 1rem 0;
-}
-.miseAvant p {
-  font-size: 1.56rem;
-  line-height: 2.31rem;
-  font-family: 'Roboto', sans-serif;
-  font-style: italic;
 }
 body {
   font-family: 'Roboto', sans-serif;
 }
 @media (min-width: 768px) {
   .navbar-nav li {
-    float: none;
+    float: left;
   }
 }

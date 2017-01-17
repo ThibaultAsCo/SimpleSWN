@@ -1,4 +1,4 @@
-
+// out: ../css/style.css, sourcemap: true, compress: false
 @import "variables.less";
 @import "mixins.less";
 
@@ -26,14 +26,8 @@ h1, h2, h3, h4, h5, h6 {
 	font-family:@primaryFont;
 }
 
-.title{
-	height: 70px;
-	background: darken(@color2Client, 10%);
-	h1{
-		color:@lightenColor;
-		line-height: 70px;
-		margin: 0;
-	}
+h1{
+	margin-bottom: 2rem;
 }
 
 // --------------------------
@@ -43,16 +37,15 @@ p {
 	font-size: 1rem;
 	font-family:@primaryFont;
 	font-weight: 400;
+	line-height: 1.62rem;
 }
 
 a{
 	color:@color2Client;
-
 	&:hover{
 		color:lighten(@color2Client, 10%);
 	}
 }
-
 
 a,
 a:hover,
@@ -60,12 +53,8 @@ a:focus,
 a:active,
 a.active {
 	text-decoration: none;
-
 }
 
-.color1{
-	fill: @lightenColor;
-}
 
 .miseAvant{
 	display: inline-block;
@@ -83,10 +72,28 @@ a.active {
 }
 
 // --------------------------
+// Boutons
+// --------------------------
+.btn{
+	height: 50px;
+	width:200px;
+	.flex();
+	.flex-direction(row);
+	align-items: center;
+	text-transform: uppercase;
+
+	.icon-btn{
+		width: 50px;
+		.flex();
+		align-items: center;
+	}
+}
+
+
+// --------------------------
 // Cible tous les pictos
 // --------------------------
 [class^="icon-"] {
-	fill:@lightenColor;
 	width: 20px;
 }
 // --------------------------
@@ -202,6 +209,14 @@ header {
 
 
 	.coordonneesHeader{
+		.flex();
+		align-items: center;
+
+		address{
+			height: 50px;
+			line-height: 50px;
+			margin-bottom: 0;
+		}
 	}
 
 
@@ -320,6 +335,7 @@ header {
 // --------------------------
 
 footer{
+
 	min-height: 60px;
 	background:@darkenColor;
 	font-weight: 300;
@@ -338,24 +354,25 @@ footer{
 
 
 	.content-footer{
+		.flex();
+		.flex-direction(row);
+		align-items: center;
+		justify-content: center;
 		height: 60px;
-		line-height: 60px;
 		padding: 0;
-	}
-
-	.AsCoConsulting{
 		font-size: 0.7rem;
-		line-height: 60px;
+
+		.logoAsCo{
+			.flex();
+			margin:0 10px;
+		}
 
 		// Logo Asco
 		.icon-AsCoConsulting{
 			width: 91px;
-			margin-top: 14px;
-			margin-left: 5px;
-			color:@lightenColor;
+			fill:@lightenColor;
 		}
-	}
-
+	} //Fin content-footer
 
 
 	// Menu footer
@@ -372,47 +389,20 @@ footer{
 
 				a{
 					color:@lightenColor;
-					font-size: 0.7rem;
-					line-height: 0.7rem;
-					}
-			}
 
-		}
-	}
+				}
+			}//Fin li
+		}//Fin ul
+	} //Fin menu-footer
 
-	section{
-		padding: 0;
-		margin: 0;
-		min-height: 0;
-		height: auto;
-	}
-}
+} //Fin footer
 
 
 // --------------------------
 // Contenus
 // --------------------------
 section{
+	padding: 2rem 0;
 	font-size: 1.1rem;
 	line-height:1.62rem;
-}
-
-.grilleImage{
-	img{
-			width: 100%;
-	}
-}
-.miseAvant{
-	display: inline-block;
-	background: @color1Client;
-	color:@lightenColor;
-	padding: 30px;
-	margin: 1rem 0;
-
-	p{
-		font-size: 1.56rem;
-		line-height: 2.31rem;
-		font-family: @primaryFont;
-		font-style: italic;
-	}
 }

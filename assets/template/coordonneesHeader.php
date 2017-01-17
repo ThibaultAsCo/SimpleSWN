@@ -1,6 +1,6 @@
 <div class="coordonneesHeader">
   <div class="container ">
-    <address class="addressClient col-lg-8 no-padding">
+    <address class="addressClient col-lg-6">
       <span class="street-address"><?= $configSite->address; ?></span>
       <span class="postal-code"><?= $configSite->cp; ?></span>
       <span class="city"><?= $configSite->city; ?></span>
@@ -8,11 +8,18 @@
     </address>
 
 
-    <a href="contact.html" class="btn btn-primary btn-lg active btn-contact flex col-lg-2" title="Nous contacter">
-      <span class="icon-button flex">
-        <?php include('assets/svg/base/icon_contact.svg'); ?>
+    <a class="btn btn-default col-xs-4 col-lg-4 " href="contact.html" role="button">
+      <span class="icon-btn">
+        <?php include 'assets/svg/base/icon-contact.svg' ?>
       </span>
-      <span class="content-bouton">Nous contacter</span>
+      Nous contacter
     </a>
+
+    <a href="tel:+33475494848" class="btn btn-primary " role="button">
+        <span class="icon-btn">
+          <?php include 'assets/svg/base/icon-phone.svg' ?>
+        </span>
+        <?= $configSite->tel; ?>
+      </a>
   </div>
 </div>

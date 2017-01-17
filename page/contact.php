@@ -5,16 +5,14 @@
 ?>
 
 
-<div class="title">
-  <div class="container">
-    <h1>Contact</h1>
-  </div>
-</div>
-
 
 <section>
 
   <div class="container">
+
+    <div class="col-xs-12">
+      <h1>Contact</h1>
+    </div>
 
     <!-- Colonne gauche -->
     <div class="col-xs-12 col-lg-6">
