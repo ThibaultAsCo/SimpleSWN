@@ -1,29 +1,25 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-default row">
-      <div class="container">
-        <!-- Logo desktop -->
-        <div class="col-xs-8 col-sm-12 col-md-4">
-          <a href="accueil.html" class="logo no-padding" title="accueil">
-            <span class="nom">Template AsCo</span>
-            <span class="slogan">Ici on pose un slogan</span>
-          </a>
-        </div>
-
-
+      <div class="container-fluid">
 
         <!-- Menu mobile-->
-        <div class="navbar-header page-scroll hidden-lg">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+
+            <a href="accueil.html" class="logo no-padding" title="accueil">
+              ici on pose le logo
+              <span class="nom">Ici le slogan</span>
+            </a>
         </div>
 
         <!-- Menu classique -->
-        <div class="navbar-collapse collapse no-padding col-xs-12 col-sm-12 col-md-8 col-lg-6 " id="bs-example-navbar-collapse-1">
+        <div class="navbar-collapse collapse col-xs-12 col-sm-12 col-md-8 col-lg-6" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
                 <li class="hidden">
                     <a href="#page-top"></a>

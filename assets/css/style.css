@@ -204,7 +204,6 @@ header .navbar {
 }
 header .navbar .logo {
   display: inline-block;
-  width: 100%;
   height: 50px;
   margin: 0;
   color: #FFF;
@@ -341,6 +340,22 @@ body {
 }
 @media (min-width: 768px) {
   .navbar-nav li {
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  footer .AsCoConsulting {
+    justify-content: flex-start;
+  }
+  footer .menu-footer {
+    justify-content: flex-end;
+  }
+  .sitemap {
+    padding: 2rem 0;
+  }
+  .sitemap ul li {
+    display: inline-block;
+    width: 50%;
     float: left;
   }
 }
