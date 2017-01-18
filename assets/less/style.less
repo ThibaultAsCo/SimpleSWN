@@ -7,7 +7,11 @@ html{
 }
 
 body {
-  	font-family:@primaryFont;
+  font-family:@primaryFont;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	// font-family:@secondaryFont;
 }
 
 
@@ -22,6 +26,17 @@ header {
       // background: @lightenColor;
       a{
         // color:@darkenColor;
+      }
+      // Bouton actif
+      a:hover,
+      a:focus,
+      a:active,
+      a.active,
+      .active > a,
+      .active > a:focus,
+      .active > a:hover{
+        background:@color1Client;
+        color:@lightenColor;
       }
     }
   }

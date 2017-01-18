@@ -32,7 +32,8 @@ p {
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  line-height: 1.62rem;
+  line-height: 1.8rem;
+  margin-bottom: 20px;
 }
 a {
   color: #D85820;
@@ -172,6 +173,9 @@ form .btn {
   line-height: 50px;
   margin-bottom: 5px;
   width: 100%;
+}
+.sitemap ul li a {
+  color: #212121;
 }
 header {
   background: #212121;
@@ -334,28 +338,4 @@ section {
   padding: 2rem 0;
   font-size: 1.1rem;
   line-height: 1.62rem;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-}
-@media (min-width: 768px) {
-  .navbar-nav li {
-    float: left;
-  }
-}
-@media (min-width: 992px) {
-  footer .AsCoConsulting {
-    justify-content: flex-start;
-  }
-  footer .menu-footer {
-    justify-content: flex-end;
-  }
-  .sitemap {
-    padding: 2rem 0;
-  }
-  .sitemap ul li {
-    display: inline-block;
-    width: 50%;
-    float: left;
-  }
 }

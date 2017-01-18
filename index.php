@@ -18,10 +18,6 @@
 
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
-        <!-- OWL carroussel style -->
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">
-        <!-- OWL carroussel Theme -->
-        <link rel="stylesheet" href="assets/css/owl.theme.css">
 
         <!-- CSS Editable-->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -43,8 +39,11 @@
     <body>
 
       <header>
-        <?php include ('assets/template/coordonneesHeader.php'); ?>
+
         <div class="container">
+          <!-- Coordonnées header -->
+          <?php include ('assets/template/coordonneesHeader.php'); ?>
+
           <!-- Menu  -->
           <?php include('assets/template/menu.php'); ?>
         </div>
@@ -78,18 +77,6 @@
 
     <!-- Item menu actif -->
     <script src="assets/js/activeMenu.js"></script>
-
-
-
-    <!-- Owl carroussel -->
-    <script src="assets/js/owl.carousel.js"></script>
-    <script type="assets/js/carousel.personnalisation.js"></script>
-
-    <!-- WOW JS -->
-    <script src="assets/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
 
 
 
