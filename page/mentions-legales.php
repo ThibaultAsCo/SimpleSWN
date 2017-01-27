@@ -39,7 +39,7 @@
            <p>
                La création graphique est réalisé par :<br/>
                <b>As & Co Consulting - Agence de Communication Nord Isère</b> <br/>
-               <b>Siège social :</b> 18 rue Joseph Cugnot - 38300 BOURGOIN-JALLIEU</b><br/>
+               <b>Siège social :</b> 1 Rue Claude Chappe - 38300 BOURGOIN-JALLIEU</b><br/>
                <b>Tél. :</b> 04 74 28 28 85 -
                <a href="http://ascoconsulting.com/" title="As & Co Consulting - Agence de Communication Nord Isère" target="_blank">Visitez notre site internet</a><br/>
            </p>
