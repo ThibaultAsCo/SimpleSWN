@@ -39,7 +39,6 @@
     <body>
 
       <header>
-
         <div class="container">
           <!-- Coordonnées header -->
           <?php include ('assets/template/coordonneesHeader.php'); ?>
@@ -51,8 +50,13 @@
 
 
       <!-- Contenus des pages -->
-      <?= $data; ?>
+      <div class="content">
+        <?= $data; ?>
+      </div>
 
+      <a href="#" title="Haut de page" class="scrollup">
+        <?php include 'assets/svg/base/icon-up.svg'; ?>
+      </a>
 
       <!-- Footer -->
       <footer>
@@ -77,6 +81,12 @@
 
     <!-- Item menu actif -->
     <script src="assets/js/activeMenu.js"></script>
+
+    <!-- SmoothScroll -->
+    <script src="assets/js/smoothScroll.js"></script>
+
+    <!-- scrollMaps -->
+    <script src="assets/js/scrollMaps.js"></script>
 
 
 

@@ -11,7 +11,7 @@
               <span class="icon-bar"></span>
           </button>
 
-          <a href="accueil.html" class="logo no-padding" title="accueil">
+          <a href="accueil.html" class="logo" title="accueil">
             ici on pose le logo
             <span class="nom">Ici le slogan</span>
           </a>

@@ -27,7 +27,7 @@ p {
   margin-bottom: 20px;
 }
 a {
-  color: #D85820;
+  color: #d85820;
 }
 a:hover {
   color: #e47747;
@@ -41,8 +41,8 @@ a.active {
 }
 .miseAvant {
   display: inline-block;
-  background: #D85820;
-  color: #FFF;
+  background: #d85820;
+  color: #ffffff;
   padding: 30px;
   margin: 1rem 0;
 }
@@ -100,7 +100,7 @@ form .form-control {
   font-size: 1rem;
 }
 form .text-danger {
-  background: #EF9A9A;
+  background: #ef9a9a;
   width: 100%;
   padding: 0 10px;
   line-height: 30px;
@@ -159,7 +159,7 @@ form .btn {
 }
 header {
   background: #212121;
-  color: #FFF;
+  color: #ffffff;
   min-height: 50px;
 }
 header .coordonneesHeader {
@@ -185,7 +185,7 @@ header .navbar .logo {
   display: inline-block;
   height: 50px;
   margin: 0;
-  color: #FFF;
+  color: #ffffff;
 }
 header .navbar .logo span {
   display: inline-block;
@@ -205,7 +205,7 @@ header .navbar .navbar-nav a {
   height: 50px;
   padding: 15px 30px;
   font-weight: 400;
-  color: #FFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 header .navbar .navbar-nav a:hover {
@@ -219,19 +219,18 @@ header .navbar .navbar-nav .active > a:hover {
   background: none;
 }
 header .navbar .navbar-nav .dropdown-menu {
-  padding: 0;
-  color: #FFF;
+  color: #ffffff;
   background: #212121;
 }
-header .navbar .navbar-nav .dropdown-menu li {
-  display: inline-block;
-  width: 100%;
+header .navbar .navbar-nav .dropdown-menu li a {
+  color: #ffffff !important;
+  line-height: 50px;
 }
 header .navbar .navbar-nav .open > a,
 header .navbar .navbar-nav .open > a:focus,
 header .navbar .navbar-nav .open > a:hover {
-  color: #FFF;
-  background: #D85820;
+  color: #ffffff;
+  background: #d85820;
 }
 .slider {
   position: relative;
@@ -242,7 +241,7 @@ footer {
   min-height: 60px;
   background: #212121;
   font-weight: 300;
-  color: #FFF;
+  color: #ffffff;
   font-size: 0.7rem;
 }
 footer p,
@@ -250,11 +249,11 @@ footer a {
   font-size: 0.7rem;
   margin: 0;
   text-align: right;
-  color: #FFF;
+  color: #ffffff;
 }
 footer p:hover,
 footer a:hover {
-  color: #FFF;
+  color: #ffffff;
 }
 footer ul {
   margin-bottom: 0px;
@@ -284,7 +283,7 @@ footer .content-footer .logoAsCo {
 }
 footer .content-footer .icon-AsCoConsulting {
   width: 91px;
-  fill: #FFF;
+  fill: #ffffff;
 }
 footer .menu-footer {
   list-style: none;
@@ -300,73 +299,10 @@ footer .menu-footer ul li {
   font-weight: 300;
 }
 footer .menu-footer ul li a {
-  color: #FFF;
+  color: #ffffff;
 }
 section {
   padding: 2rem 0;
   font-size: 1.1rem;
   line-height: 1.62rem;
-}
-.scrollup {
-  width: 50px;
-  height: 50px;
-  line-height: 60px;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  display: none;
-  background: rgba(21, 21, 21, 0.5);
-  cursor: pointer;
-  -webkit-transition: background 0.5s ease-in;
-  -moz-transition: background 0.5s ease-in;
-  -o-transition: background 0.5s ease-in;
-  -ms-transition: background 0.5s ease-in;
-  transition: background 0.5s ease-in;
-}
-.scrollup:hover {
-  background: #3b3b3b;
-  -webkit-transition: background 0.5s ease-in;
-  -moz-transition: background 0.5s ease-in;
-  -o-transition: background 0.5s ease-in;
-  -ms-transition: background 0.5s ease-in;
-  transition: background 0.5s ease-in;
-}
-.scrollup .icon-up {
-  display: inline-block;
-  fill: #FFF;
-  width: 50px;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-}
-header .navbar .navbar-nav a:hover,
-header .navbar .navbar-nav a:focus,
-header .navbar .navbar-nav a:active,
-header .navbar .navbar-nav a.active,
-header .navbar .navbar-nav .active > a,
-header .navbar .navbar-nav .active > a:focus,
-header .navbar .navbar-nav .active > a:hover {
-  background: #212121;
-  color: #FFF;
-}
-@media (min-width: 768px) {
-  .navbar-nav li {
-    float: left;
-  }
-}
-@media (min-width: 992px) {
-  footer .AsCoConsulting {
-    justify-content: flex-start;
-  }
-  footer .menu-footer {
-    justify-content: flex-end;
-  }
-  .sitemap {
-    padding: 2rem 0;
-  }
-  .sitemap ul li {
-    display: inline-block;
-    width: 50%;
-    float: left;
-  }
 }

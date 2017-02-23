@@ -85,9 +85,12 @@
       </address>
 
       <!-- Google Maps -->
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11168.625241629095!2d5.2605367!3d45.5874024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1187bf8252bb96f!2sAs%26Co+Consulting!5e0!3m2!1sfr!2sfr!4v1468852344870"  frameborder="0" style="width:100%; height:450px; border:0" allowfullscreen>
-      </iframe>
+      <div class="map-container" id="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11168.625241629095!2d5.2605367!3d45.5874024!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1187bf8252bb96f!2sAs%26Co+Consulting!5e0!3m2!1sfr!2sfr!4v1468852344870"  frameborder="0" style="width:100%; height:450px; border:0" allowfullscreen>
+        </iframe>
+      </div>
+
     </div>
 
 

@@ -12,12 +12,6 @@ body {
 .darkenColor{background:@darkenColor}
 .greyColor{background: @gray-lighter;}
 
-.flex{
-	display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-	display: -ms-flexbox;  /* TWEENER - IE 10 */
-	display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-	display: flex;
-}
 // --------------------------
 // Titres
 // --------------------------
@@ -96,12 +90,7 @@ a.active {
 [class^="icon-"] {
 	width: 20px;
 }
-// --------------------------
-// Gestion du flexbox
-// --------------------------
-.flex{
-	flex-direction: column;
-}
+
 // --------------------------
 // Formulaire de contact
 // --------------------------
@@ -229,8 +218,6 @@ header {
 	// -----------------------------
 	.navbar {
 		background: none;
-
-		background: deeppink;
 		border: none;
 		border-radius: 0;
 		margin-bottom: 0;
@@ -292,12 +279,14 @@ header {
 
 				//Dropdown menu
 				.dropdown-menu{
+					padding: 0;
 					color:@lightenColor;
 					background: @darkenColor;
 					li{
+						display: inline-block;
+						width: 100%;
 						a{
-							color:@lightenColor !important;
-							line-height: 50px;
+
 						}
 					}
 				}
@@ -408,4 +397,35 @@ section{
 	padding: 2rem 0;
 	font-size: 1.1rem;
 	line-height:1.62rem;
+}
+
+
+// --------------------------
+// ScrollUp
+// --------------------------
+.scrollup {
+  width: 50px;
+	height: 50px;
+  line-height: 60px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	display: none;
+
+	background: rgba(21, 21, 21, 0.5);
+  cursor: pointer;
+
+  .transition (background, 0.5s,ease-in);
+
+  &:hover{
+    background:lighten(@color1Client,10%);
+    .transition (background, 0.5s,ease-in);
+  }
+
+  .icon-up{
+    display: inline-block;
+    fill:@lightenColor;
+    width: 50px;
+
+  }
 }
