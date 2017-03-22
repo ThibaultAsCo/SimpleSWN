@@ -38,9 +38,7 @@ Gestion des affichages de pages + création du référencement
 # --------------
 # FAIT :
 # --------------
-- hauteur des PP visible uniquement au bout de 180s => Footer moins gros
-
-- PP désactivé pour tablette et mobile
+- PP appelés dans le Sitemap
 
 - Récupération des informations du config.xml pour :
   - mentions légales
