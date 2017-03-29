@@ -1,44 +1,7 @@
-/* Constante formulaire */
 html {
   font-size: 16px;
 }
-.darkenColor {
-  background: #212121;
-}
-.greyColor {
-  background: #eeeeee;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto', sans-serif;
-}
-h1 {
-  margin-bottom: 2rem;
-}
-p {
-  font-size: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  line-height: 1.8rem;
-  margin-bottom: 20px;
-}
-a {
-  color: #D85820;
-}
-a:hover {
-  color: #e47747;
-}
-a,
-a:hover,
-a:focus,
-a:active,
-a.active {
-  text-decoration: none;
-}
+/* Constante formulaire */
 .miseAvant {
   display: inline-block;
   background: #D85820;
@@ -77,6 +40,207 @@ a.active {
 }
 [class^="icon-"] {
   width: 20px;
+}
+.scrollup {
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  background: rgba(21, 21, 21, 0.5);
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in;
+  -moz-transition: background 0.5s ease-in;
+  -o-transition: background 0.5s ease-in;
+  -ms-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
+}
+.scrollup:hover {
+  background: #ff3333;
+  -webkit-transition: background 0.5s ease-in;
+  -moz-transition: background 0.5s ease-in;
+  -o-transition: background 0.5s ease-in;
+  -ms-transition: background 0.5s ease-in;
+  transition: background 0.5s ease-in;
+}
+.scrollup .icon-up {
+  display: inline-block;
+  fill: #FFF;
+  width: 50px;
+}
+header {
+  background: #212121;
+  color: #FFF;
+  min-height: 50px;
+}
+header .coordonneesHeader {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+}
+header .coordonneesHeader address {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.navbar {
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+.navbar .logo {
+  display: inline-block;
+  height: 50px;
+  margin: 0;
+  color: #FFF;
+}
+.navbar .logo span {
+  display: inline-block;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+}
+.navbar .logo .nom {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+.navbar .logo .slogan {
+  font-family: 'Roboto', sans-serif;
+}
+.navbar .navbar-nav a {
+  height: 50px;
+  padding: 15px 30px;
+  font-weight: 400;
+  color: #FFF;
+  text-transform: uppercase;
+}
+.navbar .navbar-nav a:hover {
+  color: red;
+  background: none;
+}
+.navbar .navbar-nav .active > a,
+.navbar .navbar-nav .active > a:focus,
+.navbar .navbar-nav .active > a:hover {
+  color: red;
+  background: none;
+}
+.navbar .navbar-nav .dropdown-menu {
+  padding: 0;
+  color: #FFF;
+  background: #212121;
+}
+.navbar .navbar-nav .dropdown-menu li {
+  display: inline-block;
+  width: 100%;
+}
+.navbar .navbar-nav .open > a,
+.navbar .navbar-nav .open > a:focus,
+.navbar .navbar-nav .open > a:hover {
+  color: #FFF;
+  background: #D85820;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  color: red;
+}
+h1 {
+  margin-bottom: 2rem;
+}
+p {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin-bottom: 20px;
+}
+a {
+  color: #D85820;
+}
+a:hover {
+  color: #e47747;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  text-decoration: none;
+}
+footer {
+  min-height: 60px;
+  background: #212121;
+  font-weight: 300;
+  color: #FFF;
+  font-size: 0.7rem;
+}
+footer p,
+footer a {
+  font-size: 0.7rem;
+  margin: 0;
+  text-align: right;
+  color: #FFF;
+}
+footer p:hover,
+footer a:hover {
+  color: #FFF;
+}
+footer ul {
+  margin-bottom: 0px;
+}
+footer .content-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 0;
+  font-size: 0.7rem;
+}
+footer .content-footer .logoAsCo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 10px;
+}
+footer .content-footer .icon-AsCoConsulting {
+  width: 91px;
+  fill: #FFF;
+}
+footer .menu-footer {
+  list-style: none;
+}
+footer .menu-footer ul {
+  display: inline-block;
+  float: right;
+}
+footer .menu-footer ul li {
+  display: inline-block;
+  float: left;
+  margin-right: 0.5rem;
+  font-weight: 300;
+}
+footer .menu-footer ul li a {
+  color: #FFF;
 }
 form {
   margin: 2rem 0 1rem;
@@ -143,6 +307,30 @@ form .btn {
   color: #6e6e6e;
   text-align: justify;
 }
+.pageErreur h1 {
+  color: red;
+  font-weight: 700;
+}
+.pageErreur .retour404 {
+  background: #e60000;
+  border: #e60000;
+  margin: 30px auto;
+  justify-content: center;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear;
+}
+.pageErreur .retour404:hover {
+  background: #cc0000;
+  border: #cc0000;
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  transition: all 1s linear;
+}
 .sitemap ul {
   list-style-type: none;
   padding: 0;
@@ -156,241 +344,4 @@ form .btn {
 }
 .sitemap ul li a {
   color: #212121;
-}
-header {
-  background: #212121;
-  color: #FFF;
-  min-height: 50px;
-}
-header .coordonneesHeader {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-}
-header .coordonneesHeader address {
-  height: 50px;
-  line-height: 50px;
-  margin-bottom: 0;
-}
-header .navbar {
-  background: none;
-  border: none;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-header .navbar .logo {
-  display: inline-block;
-  height: 50px;
-  margin: 0;
-  color: #FFF;
-}
-header .navbar .logo span {
-  display: inline-block;
-  width: 100%;
-  height: 25px;
-  line-height: 25px;
-}
-header .navbar .logo .nom {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-}
-header .navbar .logo .slogan {
-  font-family: 'Roboto', sans-serif;
-}
-header .navbar .navbar-nav a {
-  height: 50px;
-  padding: 15px 30px;
-  font-weight: 400;
-  color: #FFF;
-  text-transform: uppercase;
-}
-header .navbar .navbar-nav a:hover {
-  color: #212121;
-  background: none;
-}
-header .navbar .navbar-nav .active > a,
-header .navbar .navbar-nav .active > a:focus,
-header .navbar .navbar-nav .active > a:hover {
-  color: #212121;
-  background: none;
-}
-header .navbar .navbar-nav .dropdown-menu {
-  padding: 0;
-  color: #FFF;
-  background: #212121;
-}
-header .navbar .navbar-nav .dropdown-menu li {
-  display: inline-block;
-  width: 100%;
-}
-header .navbar .navbar-nav .open > a,
-header .navbar .navbar-nav .open > a:focus,
-header .navbar .navbar-nav .open > a:hover {
-  color: #FFF;
-  background: #D85820;
-}
-.slider {
-  position: relative;
-  width: 100%;
-  margin-bottom: 3.75rem;
-}
-footer {
-  min-height: 60px;
-  background: #212121;
-  font-weight: 300;
-  color: #FFF;
-  font-size: 0.7rem;
-}
-footer p,
-footer a {
-  font-size: 0.7rem;
-  margin: 0;
-  text-align: right;
-  color: #FFF;
-}
-footer p:hover,
-footer a:hover {
-  color: #FFF;
-}
-footer ul {
-  margin-bottom: 0px;
-}
-footer .content-footer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 60px;
-  padding: 0;
-  font-size: 0.7rem;
-}
-footer .content-footer .logoAsCo {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 10px;
-}
-footer .content-footer .icon-AsCoConsulting {
-  width: 91px;
-  fill: #FFF;
-}
-footer .menu-footer {
-  list-style: none;
-}
-footer .menu-footer ul {
-  display: inline-block;
-  float: right;
-}
-footer .menu-footer ul li {
-  display: inline-block;
-  float: left;
-  margin-right: 0.5rem;
-  font-weight: 300;
-}
-footer .menu-footer ul li a {
-  color: #FFF;
-}
-section {
-  padding: 2rem 0;
-  font-size: 1.1rem;
-  line-height: 1.62rem;
-}
-.pageErreur h1 {
-  color: #212121;
-  font-weight: 700;
-}
-.pageErreur .retour404 {
-  background: #141414;
-  border: #141414;
-  margin: 30px auto;
-  justify-content: center;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  transition: all 1s linear;
-}
-.pageErreur .retour404:hover {
-  background: #080808;
-  border: #080808;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  -ms-transition: all 1s linear;
-  transition: all 1s linear;
-}
-.scrollup {
-  width: 50px;
-  height: 50px;
-  line-height: 60px;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  display: none;
-  background: rgba(21, 21, 21, 0.5);
-  cursor: pointer;
-  -webkit-transition: background 0.5s ease-in;
-  -moz-transition: background 0.5s ease-in;
-  -o-transition: background 0.5s ease-in;
-  -ms-transition: background 0.5s ease-in;
-  transition: background 0.5s ease-in;
-}
-.scrollup:hover {
-  background: #3b3b3b;
-  -webkit-transition: background 0.5s ease-in;
-  -moz-transition: background 0.5s ease-in;
-  -o-transition: background 0.5s ease-in;
-  -ms-transition: background 0.5s ease-in;
-  transition: background 0.5s ease-in;
-}
-.scrollup .icon-up {
-  display: inline-block;
-  fill: #FFF;
-  width: 50px;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-}
-header .navbar .navbar-nav a:hover,
-header .navbar .navbar-nav a:focus,
-header .navbar .navbar-nav a:active,
-header .navbar .navbar-nav a.active,
-header .navbar .navbar-nav .active > a,
-header .navbar .navbar-nav .active > a:focus,
-header .navbar .navbar-nav .active > a:hover {
-  background: #212121;
-  color: #FFF;
-}
-@media (min-width: 768px) {
-  .navbar-nav li {
-    float: left;
-  }
-}
-@media (min-width: 992px) {
-  footer .AsCoConsulting {
-    justify-content: flex-start;
-  }
-  footer .menu-footer {
-    justify-content: flex-end;
-  }
-  .sitemap {
-    padding: 2rem 0;
-  }
-  .sitemap ul li {
-    display: inline-block;
-    width: 50%;
-    float: left;
-  }
 }

@@ -1,0 +1,41 @@
+// main: ../theme.less
+@import "variables.less";
+
+
+// --------------------------
+// Titres
+// --------------------------
+h1, h2, h3, h4, h5, h6 {
+	font-family:@primaryFont;
+	color: red;
+}
+
+h1{
+	margin-bottom: 2rem;
+}
+
+// --------------------------
+// Texte / Span / Titre
+// --------------------------
+p {
+	font-size: 1rem;
+	font-family:@primaryFont;
+	font-weight: 400;
+	line-height: 1.8rem;
+	margin-bottom: 20px;
+}
+
+a{
+	color:@color2Client;
+	&:hover{
+		color:lighten(@color2Client, 10%);
+	}
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+	text-decoration: none;
+}

@@ -1,0 +1,24 @@
+// main: ../theme.less
+@import "variables.less";
+
+// --------------------------
+// Header
+// --------------------------
+header {
+	background:@darkenColor;
+	color: @lightenColor;
+	min-height: 50px;
+
+
+	.coordonneesHeader{
+		.flex();
+		align-items: center;
+
+		address{
+			height: 50px;
+			line-height: 50px;
+			margin-bottom: 0;
+		}
+	}
+
+} // Fin Header

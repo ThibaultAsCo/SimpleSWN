@@ -1,0 +1,76 @@
+// main: ../theme.less
+@import "variables.less";
+
+.miseAvant{
+	display: inline-block;
+	background: @color2Client;
+	color:@lightenColor;
+	padding: 30px;
+	margin: 1rem 0;
+
+	p{
+		font-size: 1.56rem;
+		line-height: 2.31rem;
+		font-family: @primaryFont;
+		font-style: italic;
+	}
+}
+
+// --------------------------
+// Boutons
+// --------------------------
+.btn{
+	height: 50px;
+	width:200px;
+	.flex();
+	.flex-direction(row);
+	align-items: center;
+	text-transform: uppercase;
+
+	.icon-btn{
+		width: 50px;
+		.flex();
+		align-items: center;
+	}
+}
+
+
+// --------------------------
+// Cible tous les pictos
+// --------------------------
+[class^="icon-"] {
+	width: 20px;
+}
+
+
+
+
+// --------------------------
+// ScrollUp
+// --------------------------
+.scrollup {
+  width: 50px;
+	height: 50px;
+  line-height: 60px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	display: none;
+
+	background: rgba(21, 21, 21, 0.5);
+  cursor: pointer;
+
+  .transition (background, 0.5s,ease-in);
+
+  &:hover{
+    background:lighten(@color1Client,10%);
+    .transition (background, 0.5s,ease-in);
+  }
+
+  .icon-up{
+    display: inline-block;
+    fill:@lightenColor;
+    width: 50px;
+
+  }
+}

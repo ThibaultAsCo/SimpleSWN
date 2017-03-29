@@ -1,0 +1,23 @@
+// out: ../css/theme.css, compress: false
+@import "variables.less";
+
+.pageErreur{
+  h1{
+    color:@color1Client;
+    font-weight: 700;
+  }
+
+  .retour404{
+    background:darken(@color1Client, 5%);
+    border:darken(@color1Client, 5%);
+    margin:30px auto;
+    justify-content: center;
+    .transition(all,1s,linear);
+
+    &:hover{
+      background:darken(@color1Client, 10%);
+      border:darken(@color1Client, 10%);
+      .transition(all,1s,linear);
+    }
+  }
+}

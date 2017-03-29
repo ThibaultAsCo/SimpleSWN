@@ -1,0 +1,64 @@
+// main: ../theme.less
+@import "variables.less";
+
+footer{
+	min-height: 60px;
+	background:@darkenColor;
+	font-weight: 300;
+	color:@lightenColor;
+	font-size: 0.7rem;
+
+	p, a{
+		font-size: 0.7rem;
+		margin: 0;
+		text-align: right;
+		color:@lightenColor;
+		&:hover{color:@lightenColor;}
+	}
+
+	ul{margin-bottom: 0px;}
+
+
+	.content-footer{
+		.flex();
+		.flex-direction(row);
+		align-items: center;
+		justify-content: center;
+		height: 60px;
+		padding: 0;
+		font-size: 0.7rem;
+
+		.logoAsCo{
+			.flex();
+			margin:0 10px;
+		}
+
+		// Logo Asco
+		.icon-AsCoConsulting{
+			width: 91px;
+			fill:@lightenColor;
+		}
+	} //Fin content-footer
+
+
+	// Menu footer
+	.menu-footer{
+		list-style: none;
+			ul{
+				display: inline-block;
+				float: right;
+			li{
+				display: inline-block;
+				float: left;
+				margin-right: 0.5rem;
+				font-weight: 300;
+
+				a{
+					color:@lightenColor;
+
+				}
+			}//Fin li
+		}//Fin ul
+	} //Fin menu-footer
+
+} //Fin footer
