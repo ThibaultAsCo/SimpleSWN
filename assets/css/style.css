@@ -58,7 +58,7 @@ html {
   transition: background 0.5s ease-in;
 }
 .scrollup:hover {
-  background: #ff3333;
+  background: #00dabb;
   -webkit-transition: background 0.5s ease-in;
   -moz-transition: background 0.5s ease-in;
   -o-transition: background 0.5s ease-in;
@@ -122,13 +122,13 @@ header .coordonneesHeader address {
   text-transform: uppercase;
 }
 .navbar .navbar-nav a:hover {
-  color: red;
+  color: #00a78f;
   background: none;
 }
 .navbar .navbar-nav .active > a,
 .navbar .navbar-nav .active > a:focus,
 .navbar .navbar-nav .active > a:hover {
-  color: red;
+  color: #00a78f;
   background: none;
 }
 .navbar .navbar-nav .dropdown-menu {
@@ -153,7 +153,7 @@ h4,
 h5,
 h6 {
   font-family: 'Roboto', sans-serif;
-  color: red;
+  color: #00a78f;
 }
 h1 {
   margin-bottom: 2rem;
@@ -177,6 +177,15 @@ a:focus,
 a:active,
 a.active {
   text-decoration: none;
+}
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.grilleImage img {
+  height: 250px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 footer {
   min-height: 60px;
@@ -241,6 +250,14 @@ footer .menu-footer ul li {
 }
 footer .menu-footer ul li a {
   color: #FFF;
+}
+@media (min-width: 992px) {
+  footer .AsCoConsulting {
+    justify-content: flex-start;
+  }
+  footer .menu-footer {
+    justify-content: flex-end;
+  }
 }
 form {
   margin: 2rem 0 1rem;
@@ -308,12 +325,12 @@ form .btn {
   text-align: justify;
 }
 .pageErreur h1 {
-  color: red;
+  color: #00a78f;
   font-weight: 700;
 }
 .pageErreur .retour404 {
-  background: #e60000;
-  border: #e60000;
+  background: #008e79;
+  border: #008e79;
   margin: 30px auto;
   justify-content: center;
   -webkit-transition: all 1s linear;
@@ -323,8 +340,8 @@ form .btn {
   transition: all 1s linear;
 }
 .pageErreur .retour404:hover {
-  background: #cc0000;
-  border: #cc0000;
+  background: #007463;
+  border: #007463;
   -webkit-transition: all 1s linear;
   -moz-transition: all 1s linear;
   -o-transition: all 1s linear;
@@ -344,4 +361,14 @@ form .btn {
 }
 .sitemap ul li a {
   color: #212121;
+}
+@media (min-width: 992px) {
+  .sitemap {
+    padding: 2rem 0;
+  }
+  .sitemap ul li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
 }

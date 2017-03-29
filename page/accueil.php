@@ -6,17 +6,6 @@
 
 
 
-<div class="row">
-  <!-- Diaporama -->
-  <?php //include('assets/template/diaporama.php'); ?>
-</div>
-
-<div class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.7s">
-  <div class="container">
-    <h1>Ici on pose un titre</h1>
-  </div>
-</div>
-
 
 
 <section>

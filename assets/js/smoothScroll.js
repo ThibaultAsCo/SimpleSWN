@@ -14,7 +14,7 @@ $(function() {
 });
 
 
-
+// Flèche retour haut
 ScrollToTop=function() {
   var s = $(window).scrollTop();
   if (s > 250) {
@@ -34,7 +34,6 @@ StopAnimation=function() {
     $('html, body').stop();
   });
 }
-
 
 $(window).scroll(function() {
   ScrollToTop();

@@ -34,6 +34,8 @@
 
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
         <!-- CSS Editable-->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -103,7 +105,9 @@
 
     <!-- scrollMaps -->
     <script src="assets/js/scrollMaps.js"></script>
-
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/gestionCarousel.js"></script>
 
 
 </html>
