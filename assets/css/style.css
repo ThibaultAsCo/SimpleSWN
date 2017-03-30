@@ -70,6 +70,19 @@ html {
   fill: #FFF;
   width: 50px;
 }
+.map-container {
+  width: 100%;
+}
+.map-container iframe {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  position: relative;
+  /* IE needs a position other than static */
+}
+.map-container iframe.clicked {
+  pointer-events: auto;
+}
 header {
   background: #212121;
   color: #FFF;
