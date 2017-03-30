@@ -147,6 +147,14 @@ header .coordonneesHeader address {
   display: inline-block;
   width: 100%;
 }
+.logo {
+  display: inline-block;
+  height: 50px;
+  width: 245px;
+  overflow: hidden;
+  margin: 0;
+  color: #FFF;
+}
 h1,
 h2,
 h3,

@@ -1,28 +1,19 @@
 // main: ../theme.less
 @import "variables.less";
 
-
 // --------------------------
-// Plan du site
+// Logo
 // --------------------------
-.sitemap{
-	ul{
-		list-style-type: none;
-		padding: 0;;
+.logo{
+  display: inline-block;
+  height: 50px;
+  width: 245px;
+  overflow: hidden;;
+  margin: 0;
+  color:@lightenColor;
+  // background: red;
 
-		li{
-			display: inline-block;
-			height: 50px;
-			line-height: 50px;
-			margin-bottom: 5px;
-			width: 100%;
-
-			a{
-				color:@darkenColor;
-			}
-		}
-	}
-}
+} // Fin Logo
 
 
 // --------------------------
@@ -35,16 +26,6 @@
 // Grandes tablettes - MD
 // --------------------------
 @media(min-width:992px) {
-	.sitemap{
-		padding: 2rem 0;
-		ul{
-			li{
-				display: inline-block;
-				width: 50%;
-				float: left;
-			}
-		}
-	}
 }
 
 // --------------------------
