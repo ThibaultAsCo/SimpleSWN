@@ -1,90 +1,98 @@
 // main: ../theme.less
 @import "variables.less";
 
+// --------------------------
+// Logo
+// --------------------------
+.logo{
+  display: inline-block;
+  height: 50px;
+  margin: 0;
+  color:@lightenColor;
+  background: blue;
+
+  span{
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+  }
+  .nom{
+    font-size: 1.1rem;;
+    text-transform: uppercase;
+    font-family: @primaryFont;
+  }
+  .slogan{
+    font-family: @primaryFont;
+  }
+} // Fin Logo
+
+
+
 // ----------------------------
 // Menu top = nav class="navbar"
 // -----------------------------
-.navbar {
+.navbar{
   background: none;
   border: none;
   border-radius: 0;
   margin-bottom: 0;
 
+  .navbar-nav{
+    li{
+      a{
+        height: 50px;
+        padding: 15px 30px;
 
-  // --------------------------
-  // Logo
-  // --------------------------
-  .logo{
-    display: inline-block;
-    height: 50px;
-    margin: 0;
-    color:@lightenColor;
+        font-weight: 400;
+        color:@lightenColor;
+        text-transform: uppercase;
 
-    span{
-      display: inline-block;
-      width: 100%;
-      height: 25px;
-      line-height: 25px;
+        &:hover{
+          color:@lightenColor;
+          background: olive;
+        }//.hover
+      }// Fin a
+    }// li
+
+    // Bouton actif
+    .active > a,
+    .active > a:focus,
+    .active > a:hover{
+      color:@color1Client;
+      background: olive;
     }
-    .nom{
-      font-size: 1.1rem;;
-      text-transform: uppercase;
-      font-family: @primaryFont;
+
+    // --------------------------
+    // Li pour Dropdown-menu
+    // --------------------------
+    .open>a,
+    .open>a:focus,
+    .open>a:hover{
+      color:@lightenColor;
+      background: @color2Client;
     }
-    .slogan{
-      font-family: @primaryFont;
+
+    // --------------------------
+    // Dropdown-menu
+    // --------------------------
+    .dropdown-menu{
+      padding: 0;
+      color:@lightenColor;
+      background: @darkenColor;
+
+      li{
+        display: inline-block;
+        width: 100%;
+        a{}
+      }//li
     }
-  } // Fin Logo
+  }// Fin .navbar-nav
+
 
   // Hamburger menu
   // --------------------------
   .navbar-toggle{
   }
 
-  .navbar-nav {
-
-    a{
-      height: 50px;
-      padding: 15px 30px;
-
-      font-weight: 400;
-      color:@lightenColor;
-      text-transform: uppercase;
-
-        &:hover{
-          color:@color1Client;
-          background: none;
-        }
-      }// Fin a
-
-      // Bouton actif
-      .active > a,
-      .active > a:focus,
-      .active > a:hover{
-        color:@color1Client;
-        background: none;
-      }
-
-      //Dropdown menu
-      .dropdown-menu{
-        padding: 0;
-        color:@lightenColor;
-        background: @darkenColor;
-        li{
-          display: inline-block;
-          width: 100%;
-          a{
-
-          }
-        }
-      }
-
-      .open>a,
-      .open>a:focus,
-      .open>a:hover{
-        color:@lightenColor;
-        background: @color2Client;
-      }
-
-  }// Fin .navbar-nav
 }// Fin .navbar
