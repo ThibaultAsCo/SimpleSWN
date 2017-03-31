@@ -251,6 +251,7 @@ footer .content-footer .logoAsCo {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 60px;
   margin: 0 10px;
 }
 footer .content-footer .icon-AsCoConsulting {
