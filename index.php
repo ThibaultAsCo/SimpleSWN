@@ -86,7 +86,7 @@
     </body>
 
     <!--  jQuery 1.7+  -->
-    <script src="assets/js/jquery-1.9.1.min.js"></script>
+    <!-- <script src="assets/js/jquery-1.9.1.min.js"></script> -->
 
     <!-- jQuery Version 1.11.1 -->
     <script src="assets/js/jquery.js"></script>
