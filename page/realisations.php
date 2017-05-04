@@ -52,31 +52,48 @@
 
     </div>
 
+    <!-- Carousel owl-carousel -->
     <div class="owl-carousel realisations col-lg-6">
+      <?php
+        for ($i = 0;$i < count($files) ; $i++) {
+          $test_Fichier = $files[$i];
+          echo '
+            <div class="item">
+              <img src="'.$test_Fichier.'" title="ICI le titre de mon image" class="img-responsive" />
+            </div>
+          ';
+        }
+      ?>
+    </div>
 
-        <?php
-          for ($i = 0;$i < count($files) ; $i++) {
-            $test_Fichier = $files[$i];
-            echo '
-              <div class="item">
-                <img src="'.$test_Fichier.'" title="ICI le titre de mon image" class="img-responsive" />
-              </div>
-            ';
-          }
-        ?>
+
+    <div class="col-lg-12 grilleImage">
+      <h4>Grille image :</h4>
+      <?php
+        for ($i = 0;$i < count($files) ; $i++) {
+          $test_Fichier = $files[$i];
+          echo '
+            <a href="#" class="col-lg-4" data-toggle="modal" data-target="#lightbox">
+              <img src="'.$test_Fichier.'" title="'.$valide_extensions.'" class="thumbnail img-responsive" alt=""/>
+            </a>
+          ';
+        }
+      ?>
+    </div> <!-- grilleImage -->
+
+
+
+  </div> <!-- .container -->
+
+  <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true">×</button>
+      <div class="modal-content">
+          <div class="modal-body">
+              <img src="" alt="" />
+          </div>
       </div>
-
-      <div class="col-lg-12 grilleImage">
-        <h4>Grille image :</h4>
-        <?php
-          for ($i = 0;$i < count($files) ; $i++) {
-            $test_Fichier = $files[$i];
-            echo '
-              <img src="'.$test_Fichier.'" title="ICI le titre de mon image" class="col-lg-4 img-responsive" />
-            ';
-          }
-        ?>
-      </div>
-
+    </div>
   </div>
+
 </section>

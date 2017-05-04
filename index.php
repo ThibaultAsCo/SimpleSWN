@@ -35,7 +35,7 @@
         <!-- Bootstrap Core CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
         <!-- CSS Editable-->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -44,8 +44,6 @@
         <!-- Roboto + Noto Sans -->
         <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Roboto:300,400,500,700" rel="stylesheet">
 
-
-        <!--<link rel="stylesheet" href="assets/css/pp.css" />-->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -93,21 +91,20 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
+    <!-- Item menu actif -->
+    <script src="assets/js/activeMenu.js"></script>
+
     <!-- Contact Form JavaScript -->
     <script src="assets/js/jqBootstrapValidation.js"></script>
     <script src="assets/js/contact_me.js"></script>
 
-    <!-- Item menu actif -->
-    <script src="assets/js/activeMenu.js"></script>
-
-    <!-- SmoothScroll -->
-    <script src="assets/js/smoothScroll.js"></script>
-
-    <!-- scrollMaps -->
-    <script src="assets/js/scrollMaps.js"></script>
-    <!-- Owl Carousel -->
+    <!-- Owl carousel -->
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/gestionCarousel.js"></script>
+
+    <!-- Lightbox -->
+    <script src="assets/js/lightbox.js"></script>
+
 
 
 </html>
