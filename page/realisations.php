@@ -57,9 +57,10 @@
       <?php
         for ($i = 0;$i < count($files) ; $i++) {
           $test_Fichier = $files[$i];
+          $titre = pathinfo($test_Fichier,  PATHINFO_FILENAME);
           echo '
             <div class="item">
-              <img src="'.$test_Fichier.'" title="ICI le titre de mon image" class="img-responsive" />
+              <img src="'.$test_Fichier.'" title="'.$titre.'" alt="'.$titre.'" class="img-responsive" />
             </div>
           ';
         }
@@ -72,9 +73,10 @@
       <?php
         for ($i = 0;$i < count($files) ; $i++) {
           $test_Fichier = $files[$i];
+          $titre = pathinfo($test_Fichier,  PATHINFO_FILENAME);
           echo '
             <a href="#" class="col-lg-4" data-toggle="modal" data-target="#lightbox">
-              <img src="'.$test_Fichier.'" title="'.$valide_extensions.'" class="thumbnail img-responsive" alt=""/>
+              <img src="'.$test_Fichier.'" title="'.$titre.'" alt="'.$titre.'" class="thumbnail img-responsive" alt=""/>
             </a>
           ';
         }
