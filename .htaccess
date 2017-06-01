@@ -23,8 +23,8 @@ ErrorDocument 500 http://www.site.com/500.html
   ExpiresDefault                                      "access plus 1 month"
 
   # CSS
-  ExpiresByType text/css                              "access plus 1 year"
-  #ExpiresByType text/css                             "access plus 0 seconds"
+  #ExpiresByType text/css                              "access plus 1 year"
+  ExpiresByType text/css                             "access plus 0 seconds"
 
 
   # Data interchange

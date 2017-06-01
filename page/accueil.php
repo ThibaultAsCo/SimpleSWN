@@ -11,7 +11,7 @@
 <section>
   <div class="container">
     <div class="col-xs-12 col-lg-6">
-      <h1>h1. Bootstrap heading - 36px</h1>
+      <h1 class="animated fadeIn">h1. Bootstrap heading - 36px</h1>
       <h2>h2. Bootstrap heading - 30px</h2>
       <h3>h3. Bootstrap heading - 24px</h3>
       <h4>h4. Bootstrap heading - 18px</h4>

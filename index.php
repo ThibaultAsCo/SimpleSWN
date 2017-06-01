@@ -45,7 +45,7 @@
           <!-- Menu  -->
           <?php include 'assets/template/menu.php'; ?>
 
-          <?php include 'assets/template/diaporama.php'?>
+          <?php include 'assets/template/diaporama.php'; ?>
         </div>
       </header>
 
