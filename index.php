@@ -35,7 +35,19 @@
         <![endif]-->
     </head>
 
-    <body>
+    <?php
+      $MyId = $_GET['p'];
+      if($MyId == '' || $MyId == 'accueil'){
+        $MyId ='accueil';
+        $MyClass ='accueilSite';
+      }
+      elseif($MyId !== 'accueil' || $MyId !== ''){
+        $MyClass ='contentSite';
+      }
+
+    ?>
+
+    <body id="<?php echo $MyId; ?>" class="<?php echo $MyClass; ?>">
 
       <header>
         <div class="container">
