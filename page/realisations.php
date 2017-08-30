@@ -76,7 +76,7 @@
           $titre = pathinfo($test_Fichier,  PATHINFO_FILENAME);
           echo '
             <a href="#" class="col-lg-4" data-toggle="modal" data-target="#lightbox">
-              <img src="'.$test_Fichier.'" title="'.$titre.'" alt="'.$titre.'" class="thumbnail img-responsive" alt=""/>
+              <img src="'.$test_Fichier.'" title="'.$titre.'" alt="'.$titre.'" class="thumbnail img-responsive"/>
             </a>
           ';
         }
